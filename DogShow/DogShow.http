@@ -1,0 +1,6 @@
+@DogShow_HostAddress = http://localhost:5182
+
+GET {{DogShow_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
