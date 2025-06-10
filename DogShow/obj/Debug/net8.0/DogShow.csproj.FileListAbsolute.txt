@@ -99,3 +99,4 @@ D:\Visual Studio 2022 projects\DogShow-Project\DogShow\obj\Debug\net8.0\DogShow.
 D:\Visual Studio 2022 projects\DogShow-Project\DogShow\obj\Debug\net8.0\ref\DogShow.dll
 D:\Visual Studio 2022 projects\DogShow-Project\DogShow\bin\Debug\net8.0\EntityFramework.SqlServerCompact.dll
 D:\Visual Studio 2022 projects\DogShow-Project\DogShow\bin\Debug\net8.0\System.Data.SqlServerCe.dll
+D:\Visual Studio 2022 projects\DogShow-Project\DogShow\obj\Debug\net8.0\DogShow.sourcelink.json

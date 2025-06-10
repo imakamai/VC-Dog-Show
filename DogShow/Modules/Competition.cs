@@ -1,19 +1,20 @@
 ﻿namespace DogShow.Modules
 {
-    public class Competitionncs
+    public class Competition
     {
-        public Competitionncs()
+        public Competition()
         {
+            Judges = new List<Judge>();
         }
 
-        public Competitionncs(int id, string title, DateOnly acquisitionDate, TimeOnly acquisitionTime, string acquisitionPlace, Judge judge)
+        public Competition(int id, string title, DateOnly acquisitionDate, TimeOnly acquisitionTime, string acquisitionPlace, List<Judge> judges)
         {
             Id = id;
             Title = title;
             AcquisitionDate = acquisitionDate;
             AcquisitionTime = acquisitionTime;
             AcquisitionPlace = acquisitionPlace;
-            Judge = judge;
+            Judges = judges;
         }
 
         public int Id { get; set; }
@@ -21,6 +22,7 @@
         public DateOnly AcquisitionDate { get; set; }
         public TimeOnly AcquisitionTime { get; set; }
         public string AcquisitionPlace {  get; set; }
-        public Judge Judge { get; set; }
+        public List<Judge> Judges { get; set; }
+
     }
 }

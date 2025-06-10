@@ -1,0 +1,21 @@
+# Visual Studio
+.vs/
+*.suo
+*.user
+*.log
+*.tlog
+*.VC.db
+*.opendb
+
+# NuGet
+*.nupkg
+# The packages folder can be ignored because it's recreated by NuGet on build
+packages/
+# target/ usually contains build outputs and can be ignored
+target/
+
+# Build outputs
+[Dd]ebug/
+[Rr]elease/
+[Bb]in/
+[Oo]bj/

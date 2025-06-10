@@ -11,29 +11,39 @@
     {
         public Dog()
         {
+            Forms = new List<FormForDogs>(); 
         }
 
-        public Dog(int id, string name, string bread, int age, Gender gender, double wieght, double size, byte[] pedigre, Competitionncs competitionncs)
+        public Dog(int id, string name, string breed, int age, Gender gender, double weight, double size, byte[] pedigree)
         {
             Id = id;
             Name = name;
-            Bread = bread;
+            Breed = breed; 
             Age = age;
             Gender = gender;
-            Wieght = wieght;
+            Weight = weight; 
             Size = size;
-            Pedigre = pedigre;
-            Competitionncs = competitionncs;
+            Pedigree = pedigree;
+            
+            Forms = new List<FormForDogs>();
         }
 
         public int Id { get; set; }
         public string Name { get; set; }
-        public string Bread {  get; set; }
+        public string Breed { get; set; } 
         public int Age { get; set; }
         public Gender Gender { get; set; }
-        public double Wieght { get; set; }
+        public double Weight { get; set; } 
         public double Size { get; set; }
-        public byte[] Pedigre { get; set; }
-        public Competitionncs Competitionncs { get; set; }
+        public byte[] Pedigree { get; set; } 
+        public int? OwnerId { get; set; } 
+        public virtual Owner Owner { get; set; }
+
+        public int? KennelId { get; set; } 
+        public virtual Kennel Kennel { get; set; }
+
+        public virtual ICollection<FormForDogs> Forms { get; set; }
+
+
     }
 }

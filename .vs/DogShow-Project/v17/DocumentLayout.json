@@ -96,7 +96,7 @@
               "RelativeDocumentMoniker": "DogShow\\Modules\\DataContext\\DogShowContext.cs",
               "ToolTip": "D:\\Visual Studio 2022 projects\\DogShow-Project\\DogShow\\Modules\\DataContext\\DogShowContext.cs",
               "RelativeToolTip": "DogShow\\Modules\\DataContext\\DogShowContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAcAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-10T11:09:29.503Z",
               "EditorCaption": ""
@@ -111,8 +111,7 @@
               "RelativeToolTip": "DogShow\\Program.cs",
               "ViewState": "AgIAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-10T11:08:04.386Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-10T11:08:04.386Z"
             },
             {
               "$type": "Document",
@@ -124,8 +123,7 @@
               "RelativeToolTip": "DogShow\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-06-10T11:03:54.334Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-10T11:03:54.334Z"
             },
             {
               "$type": "Document",
@@ -137,8 +135,7 @@
               "RelativeToolTip": "DogShow\\Modules\\DTO\\UserDisplayDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-10T11:02:16.101Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-10T11:02:16.101Z"
             },
             {
               "$type": "Document",
@@ -150,8 +147,7 @@
               "RelativeToolTip": "DogShow\\Modules\\DTO\\UserDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-10T11:01:39.697Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-10T11:01:39.697Z"
             },
             {
               "$type": "Document",
@@ -163,8 +159,7 @@
               "RelativeToolTip": "DogShow\\Modules\\Owner.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-10T10:26:14.879Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-10T10:26:14.879Z"
             },
             {
               "$type": "Document",
@@ -176,8 +171,7 @@
               "RelativeToolTip": "DogShow\\Modules\\Person.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAACUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-10T10:18:46.344Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-10T10:18:46.344Z"
             },
             {
               "$type": "Document",
@@ -189,8 +183,7 @@
               "RelativeToolTip": "DogShow\\Modules\\FormFroDogs.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-10T10:04:01.767Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-10T10:04:01.767Z"
             },
             {
               "$type": "Document",
@@ -202,8 +195,7 @@
               "RelativeToolTip": "DogShow\\Modules\\Kennel.cs",
               "ViewState": "AgIAAAIAAAAAAAAAAAAxwAgAAABnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-10T09:57:27.316Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-10T09:57:27.316Z"
             },
             {
               "$type": "Document",
@@ -215,8 +207,7 @@
               "RelativeToolTip": "DogShow\\Modules\\Judge.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-10T09:52:38.099Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-10T09:52:38.099Z"
             },
             {
               "$type": "Document",
@@ -228,8 +219,7 @@
               "RelativeToolTip": "DogShow\\Modules\\Competitionncs.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAACMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-10T09:39:53.106Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-10T09:39:53.106Z"
             },
             {
               "$type": "Document",
@@ -241,8 +231,7 @@
               "RelativeToolTip": "DogShow\\Modules\\Dog.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-10T09:18:22.549Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-10T09:18:22.549Z"
             },
             {
               "$type": "Document",
@@ -254,8 +243,7 @@
               "RelativeToolTip": "DogShow\\Modules\\User.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-10T09:14:26.762Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-10T09:14:26.762Z"
             }
           ]
         }

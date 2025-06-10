@@ -1,12 +1,12 @@
 ﻿namespace DogShow.Modules
 {
-    public class FormFroDogs
+    public class FormForDogs
     {
-        public FormFroDogs()
+        public FormForDogs()
         {
         }
 
-        public FormFroDogs(int id, Dog dog, User user)
+        public FormForDogs(int id, Dog dog, User user)
         {
             Id = id;
             Dog = dog;
