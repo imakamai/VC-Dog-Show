@@ -1,4 +1,4 @@
-﻿namespace DogShow.Modules.DTO
+﻿namespace DogShow.Modules.DTO.User
 {
     public class UserDisplayDto
     {

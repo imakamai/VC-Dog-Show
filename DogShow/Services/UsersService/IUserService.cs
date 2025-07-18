@@ -1,4 +1,5 @@
 ﻿using DogShow.Modules.DTO;
+using DogShow.Modules.DTO.User;
 
 namespace DogShow.Services.UsersService
 {

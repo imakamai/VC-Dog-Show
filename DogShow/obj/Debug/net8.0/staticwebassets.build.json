@@ -1,12 +1,1 @@
-{
-  "Version": 1,
-  "Hash": "gvScaNdBTTZEK97/nMHC+2CWIB/3ohcjUb40OQ8BKKo=",
-  "Source": "DogShow",
-  "BasePath": "_content/DogShow",
-  "Mode": "Default",
-  "ManifestType": "Build",
-  "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
-  "Assets": [],
-  "Endpoints": []
-}
+{"Version":1,"Hash":"gvScaNdBTTZEK97/nMHC+2CWIB/3ohcjUb40OQ8BKKo=","Source":"DogShow","BasePath":"_content/DogShow","Mode":"Default","ManifestType":"Build","ReferencedProjectsConfiguration":[],"DiscoveryPatterns":[],"Assets":[],"Endpoints":[]}

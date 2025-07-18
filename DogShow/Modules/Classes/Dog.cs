@@ -17,7 +17,7 @@ namespace DogShow.Modules.Classes
             Forms = new List<FormForDogs>(); 
         }
 
-        public Dog(int id, string name, string breed, int age, Gender gender, double weight, double size, byte[] pedigree, ICollection<FormForDogs> forms)
+        public Dog(int id, string name, string breed, int age, Gender gender, double weight, double size, string pedigree, ICollection<FormForDogs> forms)
         {
             Id = id;
             Name = name;
@@ -37,7 +37,7 @@ namespace DogShow.Modules.Classes
         public Gender Gender { get; set; }
         public double Weight { get; set; } 
         public double Size { get; set; }
-        public byte[] Pedigree { get; set; }
+        public string Pedigree { get; set; }
 
 
         public virtual ICollection<FormForDogs> Forms { get; set; }

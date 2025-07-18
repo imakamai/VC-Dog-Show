@@ -1,4 +1,5 @@
 ﻿using DogShow.Modules.DTO;
+using DogShow.Modules.DTO.User;
 using DogShow.Services.UsersService;
 using Microsoft.AspNetCore.Mvc;
 
