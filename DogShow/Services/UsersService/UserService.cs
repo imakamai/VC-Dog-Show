@@ -3,6 +3,7 @@ using System.Security.Claims;
 using System.Text;
 using DogShow.Modules.Classes;
 using DogShow.Modules.DTO;
+using DogShow.Modules.DTO.User;
 using DogShow.Repository.Users;
 using Microsoft.IdentityModel.Tokens;
 
@@ -150,7 +151,7 @@ namespace DogShow.Services.UsersService
                 signingCredentials: creds);
 
             return new JwtSecurityTokenHandler().WriteToken(token);
-        }
+        }                                                                                                                                        
     }
 }
 

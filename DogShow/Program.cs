@@ -20,6 +20,8 @@ builder.Services.AddDbContext<DataContext>(options => // Use the correct type 'D
 
 builder.Services.AddScoped<DogShow.Repository.Users.IUserRepository, DogShow.Repository.Users.UserRepository>();
 builder.Services.AddScoped<DogShow.Services.UsersService.IUserService, DogShow.Services.UsersService.UserService>();
+builder.Services.AddScoped<DogShow.Repository.DogRepository.IDogRepository, DogShow.Repository.DogRepository.DogRepository>();
+builder.Services.AddScoped<DogShow.Services.DogService.IDogServicecs, DogShow.Services.DogService.DogService>();
 
 var jwtKey = builder.Configuration["Jwt:Key"] ?? "super_secret_key_123!";
 var jwtIssuer = builder.Configuration["Jwt:Issuer"] ?? "DogShowIssuer";
