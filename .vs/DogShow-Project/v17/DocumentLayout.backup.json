@@ -3,8 +3,48 @@
   "WorkspaceRootPath": "D:\\Visual Studio 2022 projects\\DogShow-Project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Visual Studio 2022 projects\\DogShow-Project\\DogShow\\Migrations\\20250718095236_ChangePedigreeToString.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:DogShow\\Migrations\\20250718095236_ChangePedigreeToString.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F92A535E-250D-493E-A04C-849A412FCA2A}|DogShow\\DogShow.csproj|d:\\visual studio 2022 projects\\dogshow-project\\dogshow\\controllers\\paymentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F92A535E-250D-493E-A04C-849A412FCA2A}|DogShow\\DogShow.csproj|solutionrelative:dogshow\\controllers\\paymentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F92A535E-250D-493E-A04C-849A412FCA2A}|DogShow\\DogShow.csproj|d:\\visual studio 2022 projects\\dogshow-project\\dogshow\\modules\\settings\\stripesettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F92A535E-250D-493E-A04C-849A412FCA2A}|DogShow\\DogShow.csproj|solutionrelative:dogshow\\modules\\settings\\stripesettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F92A535E-250D-493E-A04C-849A412FCA2A}|DogShow\\DogShow.csproj|d:\\visual studio 2022 projects\\dogshow-project\\dogshow\\modules\\dto\\payment\\paymentrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F92A535E-250D-493E-A04C-849A412FCA2A}|DogShow\\DogShow.csproj|solutionrelative:dogshow\\modules\\dto\\payment\\paymentrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F92A535E-250D-493E-A04C-849A412FCA2A}|DogShow\\DogShow.csproj|d:\\visual studio 2022 projects\\dogshow-project\\dogshow\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F92A535E-250D-493E-A04C-849A412FCA2A}|DogShow\\DogShow.csproj|solutionrelative:dogshow\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F92A535E-250D-493E-A04C-849A412FCA2A}|DogShow\\DogShow.csproj|d:\\visual studio 2022 projects\\dogshow-project\\dogshow\\modules\\dto\\dog\\dogdisplaydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F92A535E-250D-493E-A04C-849A412FCA2A}|DogShow\\DogShow.csproj|solutionrelative:dogshow\\modules\\dto\\dog\\dogdisplaydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F92A535E-250D-493E-A04C-849A412FCA2A}|DogShow\\DogShow.csproj|d:\\visual studio 2022 projects\\dogshow-project\\dogshow\\modules\\classes\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F92A535E-250D-493E-A04C-849A412FCA2A}|DogShow\\DogShow.csproj|solutionrelative:dogshow\\modules\\classes\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F92A535E-250D-493E-A04C-849A412FCA2A}|DogShow\\DogShow.csproj|d:\\visual studio 2022 projects\\dogshow-project\\dogshow\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F92A535E-250D-493E-A04C-849A412FCA2A}|DogShow\\DogShow.csproj|solutionrelative:dogshow\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F92A535E-250D-493E-A04C-849A412FCA2A}|DogShow\\DogShow.csproj|d:\\visual studio 2022 projects\\dogshow-project\\dogshow\\modules\\dto\\user\\userdisplaydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F92A535E-250D-493E-A04C-849A412FCA2A}|DogShow\\DogShow.csproj|solutionrelative:dogshow\\modules\\dto\\user\\userdisplaydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F92A535E-250D-493E-A04C-849A412FCA2A}|DogShow\\DogShow.csproj|d:\\visual studio 2022 projects\\dogshow-project\\dogshow\\modules\\classes\\owner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F92A535E-250D-493E-A04C-849A412FCA2A}|DogShow\\DogShow.csproj|solutionrelative:dogshow\\modules\\classes\\owner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F92A535E-250D-493E-A04C-849A412FCA2A}|DogShow\\DogShow.csproj|d:\\visual studio 2022 projects\\dogshow-project\\dogshow\\repository\\dogrepository\\dogrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F92A535E-250D-493E-A04C-849A412FCA2A}|DogShow\\DogShow.csproj|solutionrelative:dogshow\\repository\\dogrepository\\dogrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F92A535E-250D-493E-A04C-849A412FCA2A}|DogShow\\DogShow.csproj|d:\\visual studio 2022 projects\\dogshow-project\\dogshow\\repository\\dogrepository\\idogrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F92A535E-250D-493E-A04C-849A412FCA2A}|DogShow\\DogShow.csproj|solutionrelative:dogshow\\repository\\dogrepository\\idogrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F92A535E-250D-493E-A04C-849A412FCA2A}|DogShow\\DogShow.csproj|d:\\visual studio 2022 projects\\dogshow-project\\dogshow\\services\\dogservice\\dogservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -15,24 +55,12 @@
       "RelativeMoniker": "D:0:0:{F92A535E-250D-493E-A04C-849A412FCA2A}|DogShow\\DogShow.csproj|solutionrelative:dogshow\\modules\\datacontext\\datacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F92A535E-250D-493E-A04C-849A412FCA2A}|DogShow\\DogShow.csproj|d:\\visual studio 2022 projects\\dogshow-project\\dogshow\\modules\\dto\\dog\\dogdisplaydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F92A535E-250D-493E-A04C-849A412FCA2A}|DogShow\\DogShow.csproj|solutionrelative:dogshow\\modules\\dto\\dog\\dogdisplaydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F92A535E-250D-493E-A04C-849A412FCA2A}|DogShow\\DogShow.csproj|d:\\visual studio 2022 projects\\dogshow-project\\dogshow\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F92A535E-250D-493E-A04C-849A412FCA2A}|DogShow\\DogShow.csproj|solutionrelative:dogshow\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{F92A535E-250D-493E-A04C-849A412FCA2A}|DogShow\\DogShow.csproj|d:\\visual studio 2022 projects\\dogshow-project\\dogshow\\modules\\dto\\dog\\dogdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F92A535E-250D-493E-A04C-849A412FCA2A}|DogShow\\DogShow.csproj|solutionrelative:dogshow\\modules\\dto\\dog\\dogdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F92A535E-250D-493E-A04C-849A412FCA2A}|DogShow\\DogShow.csproj|d:\\visual studio 2022 projects\\dogshow-project\\dogshow\\modules\\classes\\dog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F92A535E-250D-493E-A04C-849A412FCA2A}|DogShow\\DogShow.csproj|solutionrelative:dogshow\\modules\\classes\\dog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F92A535E-250D-493E-A04C-849A412FCA2A}|DogShow\\DogShow.csproj|d:\\visual studio 2022 projects\\dogshow-project\\dogshow\\repository\\dogrepository\\idogrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F92A535E-250D-493E-A04C-849A412FCA2A}|DogShow\\DogShow.csproj|solutionrelative:dogshow\\repository\\dogrepository\\idogrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F92A535E-250D-493E-A04C-849A412FCA2A}|DogShow\\DogShow.csproj|d:\\visual studio 2022 projects\\dogshow-project\\dogshow\\controllers\\dogcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -43,20 +71,8 @@
       "RelativeMoniker": "D:0:0:{F92A535E-250D-493E-A04C-849A412FCA2A}|DogShow\\DogShow.csproj|solutionrelative:dogshow\\modules\\dto\\user\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F92A535E-250D-493E-A04C-849A412FCA2A}|DogShow\\DogShow.csproj|d:\\visual studio 2022 projects\\dogshow-project\\dogshow\\repository\\dogrepository\\dogrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F92A535E-250D-493E-A04C-849A412FCA2A}|DogShow\\DogShow.csproj|solutionrelative:dogshow\\repository\\dogrepository\\dogrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{F92A535E-250D-493E-A04C-849A412FCA2A}|DogShow\\DogShow.csproj|d:\\visual studio 2022 projects\\dogshow-project\\dogshow\\repository\\usersrepository\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F92A535E-250D-493E-A04C-849A412FCA2A}|DogShow\\DogShow.csproj|solutionrelative:dogshow\\repository\\usersrepository\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F92A535E-250D-493E-A04C-849A412FCA2A}|DogShow\\DogShow.csproj|d:\\visual studio 2022 projects\\dogshow-project\\dogshow\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F92A535E-250D-493E-A04C-849A412FCA2A}|DogShow\\DogShow.csproj|solutionrelative:dogshow\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F92A535E-250D-493E-A04C-849A412FCA2A}|DogShow\\DogShow.csproj|d:\\visual studio 2022 projects\\dogshow-project\\dogshow\\modules\\classes\\owner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F92A535E-250D-493E-A04C-849A412FCA2A}|DogShow\\DogShow.csproj|solutionrelative:dogshow\\modules\\classes\\owner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F92A535E-250D-493E-A04C-849A412FCA2A}|DogShow\\DogShow.csproj|d:\\visual studio 2022 projects\\dogshow-project\\dogshow\\modules\\classes\\judge.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -75,14 +91,6 @@
       "RelativeMoniker": "D:0:0:{F92A535E-250D-493E-A04C-849A412FCA2A}|DogShow\\DogShow.csproj|solutionrelative:dogshow\\dogshow.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F92A535E-250D-493E-A04C-849A412FCA2A}|DogShow\\DogShow.csproj|d:\\visual studio 2022 projects\\dogshow-project\\dogshow\\modules\\dto\\user\\userdisplaydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F92A535E-250D-493E-A04C-849A412FCA2A}|DogShow\\DogShow.csproj|solutionrelative:dogshow\\modules\\dto\\user\\userdisplaydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F92A535E-250D-493E-A04C-849A412FCA2A}|DogShow\\DogShow.csproj|d:\\visual studio 2022 projects\\dogshow-project\\dogshow\\modules\\classes\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F92A535E-250D-493E-A04C-849A412FCA2A}|DogShow\\DogShow.csproj|solutionrelative:dogshow\\modules\\classes\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{F92A535E-250D-493E-A04C-849A412FCA2A}|DogShow\\DogShow.csproj|d:\\visual studio 2022 projects\\dogshow-project\\dogshow\\modules\\forms\\formfordogs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F92A535E-250D-493E-A04C-849A412FCA2A}|DogShow\\DogShow.csproj|solutionrelative:dogshow\\modules\\forms\\formfordogs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -94,7 +102,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -118,20 +126,46 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "20250718095236_ChangePedigreeToString.cs",
-              "DocumentMoniker": "D:\\Visual Studio 2022 projects\\DogShow-Project\\DogShow\\Migrations\\20250718095236_ChangePedigreeToString.cs",
-              "RelativeDocumentMoniker": "DogShow\\Migrations\\20250718095236_ChangePedigreeToString.cs",
-              "ToolTip": "D:\\Visual Studio 2022 projects\\DogShow-Project\\DogShow\\Migrations\\20250718095236_ChangePedigreeToString.cs",
-              "RelativeToolTip": "DogShow\\Migrations\\20250718095236_ChangePedigreeToString.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "PaymentRequestDto.cs",
+              "DocumentMoniker": "D:\\Visual Studio 2022 projects\\DogShow-Project\\DogShow\\Modules\\DTO\\Payment\\PaymentRequestDto.cs",
+              "RelativeDocumentMoniker": "DogShow\\Modules\\DTO\\Payment\\PaymentRequestDto.cs",
+              "ToolTip": "D:\\Visual Studio 2022 projects\\DogShow-Project\\DogShow\\Modules\\DTO\\Payment\\PaymentRequestDto.cs",
+              "RelativeToolTip": "DogShow\\Modules\\DTO\\Payment\\PaymentRequestDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-18T09:52:36.333Z",
+              "WhenOpened": "2025-08-27T13:02:30.403Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
+              "Title": "PaymentController.cs",
+              "DocumentMoniker": "D:\\Visual Studio 2022 projects\\DogShow-Project\\DogShow\\Controllers\\PaymentController.cs",
+              "RelativeDocumentMoniker": "DogShow\\Controllers\\PaymentController.cs",
+              "ToolTip": "D:\\Visual Studio 2022 projects\\DogShow-Project\\DogShow\\Controllers\\PaymentController.cs",
+              "RelativeToolTip": "DogShow\\Controllers\\PaymentController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-27T13:01:14Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "StripeSettings.cs",
+              "DocumentMoniker": "D:\\Visual Studio 2022 projects\\DogShow-Project\\DogShow\\Modules\\Settings\\StripeSettings.cs",
+              "RelativeDocumentMoniker": "DogShow\\Modules\\Settings\\StripeSettings.cs",
+              "ToolTip": "D:\\Visual Studio 2022 projects\\DogShow-Project\\DogShow\\Modules\\Settings\\StripeSettings.cs",
+              "RelativeToolTip": "DogShow\\Modules\\Settings\\StripeSettings.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-27T12:55:29.716Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "DogDisplayDto.cs",
               "DocumentMoniker": "D:\\Visual Studio 2022 projects\\DogShow-Project\\DogShow\\Modules\\DTO\\Dog\\DogDisplayDto.cs",
               "RelativeDocumentMoniker": "DogShow\\Modules\\DTO\\Dog\\DogDisplayDto.cs",
@@ -144,45 +178,111 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "DataContext.cs",
-              "DocumentMoniker": "D:\\Visual Studio 2022 projects\\DogShow-Project\\DogShow\\Modules\\DataContext\\DataContext.cs",
-              "RelativeDocumentMoniker": "DogShow\\Modules\\DataContext\\DataContext.cs",
-              "ToolTip": "D:\\Visual Studio 2022 projects\\DogShow-Project\\DogShow\\Modules\\DataContext\\DataContext.cs",
-              "RelativeToolTip": "DogShow\\Modules\\DataContext\\DataContext.cs",
-              "ViewState": "AgIAAFcAAAAAAAAAAAAIwAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 16,
+              "Title": "UserDto.cs",
+              "DocumentMoniker": "D:\\Visual Studio 2022 projects\\DogShow-Project\\DogShow\\Modules\\DTO\\User\\UserDto.cs",
+              "RelativeDocumentMoniker": "DogShow\\Modules\\DTO\\User\\UserDto.cs",
+              "ToolTip": "D:\\Visual Studio 2022 projects\\DogShow-Project\\DogShow\\Modules\\DTO\\User\\UserDto.cs",
+              "RelativeToolTip": "DogShow\\Modules\\DTO\\User\\UserDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-18T09:42:38.17Z",
+              "WhenOpened": "2025-07-16T09:52:08.415Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
+              "Title": "User.cs",
+              "DocumentMoniker": "D:\\Visual Studio 2022 projects\\DogShow-Project\\DogShow\\Modules\\Classes\\User.cs",
+              "RelativeDocumentMoniker": "DogShow\\Modules\\Classes\\User.cs",
+              "ToolTip": "D:\\Visual Studio 2022 projects\\DogShow-Project\\DogShow\\Modules\\Classes\\User.cs",
+              "RelativeToolTip": "DogShow\\Modules\\Classes\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T11:08:50.567Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Owner.cs",
+              "DocumentMoniker": "D:\\Visual Studio 2022 projects\\DogShow-Project\\DogShow\\Modules\\Classes\\Owner.cs",
+              "RelativeDocumentMoniker": "DogShow\\Modules\\Classes\\Owner.cs",
+              "ToolTip": "D:\\Visual Studio 2022 projects\\DogShow-Project\\DogShow\\Modules\\Classes\\Owner.cs",
+              "RelativeToolTip": "DogShow\\Modules\\Classes\\Owner.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-07T11:20:35.279Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Visual Studio 2022 projects\\DogShow-Project\\DogShow\\Program.cs",
               "RelativeDocumentMoniker": "DogShow\\Program.cs",
-              "ToolTip": "D:\\Visual Studio 2022 projects\\DogShow-Project\\DogShow\\Program.cs",
-              "RelativeToolTip": "DogShow\\Program.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAABkAAABJAAAAAAAAAA==",
+              "ToolTip": "D:\\Visual Studio 2022 projects\\DogShow-Project\\DogShow\\Program.cs*",
+              "RelativeToolTip": "DogShow\\Program.cs*",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABwAAABHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-10T11:08:04.386Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Owner.cs",
-              "DocumentMoniker": "D:\\Visual Studio 2022 projects\\DogShow-Project\\DogShow\\Modules\\Classes\\Owner.cs",
-              "RelativeDocumentMoniker": "DogShow\\Modules\\Classes\\Owner.cs",
-              "ToolTip": "D:\\Visual Studio 2022 projects\\DogShow-Project\\DogShow\\Modules\\Classes\\Owner.cs",
-              "RelativeToolTip": "DogShow\\Modules\\Classes\\Owner.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 6,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "D:\\Visual Studio 2022 projects\\DogShow-Project\\DogShow\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "DogShow\\Controllers\\AuthController.cs",
+              "ToolTip": "D:\\Visual Studio 2022 projects\\DogShow-Project\\DogShow\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "DogShow\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAcwCAAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-07T11:20:35.279Z"
+              "WhenOpened": "2025-07-07T10:34:45.839Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 10,
+              "Title": "IDogRepository.cs",
+              "DocumentMoniker": "D:\\Visual Studio 2022 projects\\DogShow-Project\\DogShow\\Repository\\DogRepository\\IDogRepository.cs",
+              "RelativeDocumentMoniker": "DogShow\\Repository\\DogRepository\\IDogRepository.cs",
+              "ToolTip": "D:\\Visual Studio 2022 projects\\DogShow-Project\\DogShow\\Repository\\DogRepository\\IDogRepository.cs",
+              "RelativeToolTip": "DogShow\\Repository\\DogRepository\\IDogRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-16T08:50:37.355Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "UserDisplayDto.cs",
+              "DocumentMoniker": "D:\\Visual Studio 2022 projects\\DogShow-Project\\DogShow\\Modules\\DTO\\User\\UserDisplayDto.cs",
+              "RelativeDocumentMoniker": "DogShow\\Modules\\DTO\\User\\UserDisplayDto.cs",
+              "ToolTip": "D:\\Visual Studio 2022 projects\\DogShow-Project\\DogShow\\Modules\\DTO\\User\\UserDisplayDto.cs",
+              "RelativeToolTip": "DogShow\\Modules\\DTO\\User\\UserDisplayDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-10T11:02:16.101Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "DogService.cs",
+              "DocumentMoniker": "D:\\Visual Studio 2022 projects\\DogShow-Project\\DogShow\\Services\\DogService\\DogService.cs",
+              "RelativeDocumentMoniker": "DogShow\\Services\\DogService\\DogService.cs",
+              "ToolTip": "D:\\Visual Studio 2022 projects\\DogShow-Project\\DogShow\\Services\\DogService\\DogService.cs",
+              "RelativeToolTip": "DogShow\\Services\\DogService\\DogService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-16T09:43:59.361Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
               "Title": "DogDto.cs",
               "DocumentMoniker": "D:\\Visual Studio 2022 projects\\DogShow-Project\\DogShow\\Modules\\DTO\\Dog\\DogDto.cs",
               "RelativeDocumentMoniker": "DogShow\\Modules\\DTO\\Dog\\DogDto.cs",
@@ -195,57 +295,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "DogService.cs",
-              "DocumentMoniker": "D:\\Visual Studio 2022 projects\\DogShow-Project\\DogShow\\Services\\DogService\\DogService.cs",
-              "RelativeDocumentMoniker": "DogShow\\Services\\DogService\\DogService.cs",
-              "ToolTip": "D:\\Visual Studio 2022 projects\\DogShow-Project\\DogShow\\Services\\DogService\\DogService.cs",
-              "RelativeToolTip": "DogShow\\Services\\DogService\\DogService.cs",
-              "ViewState": "AgIAAEQAAAAAAAAAAAAawFUAAAAoAAAAAAAAAA==",
+              "DocumentIndex": 9,
+              "Title": "DogRepository.cs",
+              "DocumentMoniker": "D:\\Visual Studio 2022 projects\\DogShow-Project\\DogShow\\Repository\\DogRepository\\DogRepository.cs",
+              "RelativeDocumentMoniker": "DogShow\\Repository\\DogRepository\\DogRepository.cs",
+              "ToolTip": "D:\\Visual Studio 2022 projects\\DogShow-Project\\DogShow\\Repository\\DogRepository\\DogRepository.cs",
+              "RelativeToolTip": "DogShow\\Repository\\DogRepository\\DogRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-16T09:43:59.361Z",
+              "WhenOpened": "2025-07-16T08:48:09.795Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 12,
-              "Title": "AuthController.cs",
-              "DocumentMoniker": "D:\\Visual Studio 2022 projects\\DogShow-Project\\DogShow\\Controllers\\AuthController.cs",
-              "RelativeDocumentMoniker": "DogShow\\Controllers\\AuthController.cs",
-              "ToolTip": "D:\\Visual Studio 2022 projects\\DogShow-Project\\DogShow\\Controllers\\AuthController.cs",
-              "RelativeToolTip": "DogShow\\Controllers\\AuthController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAJAAAAAAAAAA==",
+              "Title": "DataContext.cs",
+              "DocumentMoniker": "D:\\Visual Studio 2022 projects\\DogShow-Project\\DogShow\\Modules\\DataContext\\DataContext.cs",
+              "RelativeDocumentMoniker": "DogShow\\Modules\\DataContext\\DataContext.cs",
+              "ToolTip": "D:\\Visual Studio 2022 projects\\DogShow-Project\\DogShow\\Modules\\DataContext\\DataContext.cs",
+              "RelativeToolTip": "DogShow\\Modules\\DataContext\\DataContext.cs",
+              "ViewState": "AgIAAFcAAAAAAAAAAAAIwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-07T10:34:45.839Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "UserDto.cs",
-              "DocumentMoniker": "D:\\Visual Studio 2022 projects\\DogShow-Project\\DogShow\\Modules\\DTO\\User\\UserDto.cs",
-              "RelativeDocumentMoniker": "DogShow\\Modules\\DTO\\User\\UserDto.cs",
-              "ToolTip": "D:\\Visual Studio 2022 projects\\DogShow-Project\\DogShow\\Modules\\DTO\\User\\UserDto.cs",
-              "RelativeToolTip": "DogShow\\Modules\\DTO\\User\\UserDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-16T09:52:08.415Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "IDogRepository.cs",
-              "DocumentMoniker": "D:\\Visual Studio 2022 projects\\DogShow-Project\\DogShow\\Repository\\DogRepository\\IDogRepository.cs",
-              "RelativeDocumentMoniker": "DogShow\\Repository\\DogRepository\\IDogRepository.cs",
-              "ToolTip": "D:\\Visual Studio 2022 projects\\DogShow-Project\\DogShow\\Repository\\DogRepository\\IDogRepository.cs",
-              "RelativeToolTip": "DogShow\\Repository\\DogRepository\\IDogRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-16T08:50:37.355Z",
+              "WhenOpened": "2025-07-18T09:42:38.17Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 14,
               "Title": "Dog.cs",
               "DocumentMoniker": "D:\\Visual Studio 2022 projects\\DogShow-Project\\DogShow\\Modules\\Classes\\Dog.cs",
               "RelativeDocumentMoniker": "DogShow\\Modules\\Classes\\Dog.cs",
@@ -258,20 +334,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "DogRepository.cs",
-              "DocumentMoniker": "D:\\Visual Studio 2022 projects\\DogShow-Project\\DogShow\\Repository\\DogRepository\\DogRepository.cs",
-              "RelativeDocumentMoniker": "DogShow\\Repository\\DogRepository\\DogRepository.cs",
-              "ToolTip": "D:\\Visual Studio 2022 projects\\DogShow-Project\\DogShow\\Repository\\DogRepository\\DogRepository.cs",
-              "RelativeToolTip": "DogShow\\Repository\\DogRepository\\DogRepository.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAA4wC4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-16T08:48:09.795Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 15,
               "Title": "DogController.cs",
               "DocumentMoniker": "D:\\Visual Studio 2022 projects\\DogShow-Project\\DogShow\\Controllers\\DogController.cs",
               "RelativeDocumentMoniker": "DogShow\\Controllers\\DogController.cs",
@@ -279,11 +342,12 @@
               "RelativeToolTip": "DogShow\\Controllers\\DogController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-18T08:35:57.142Z"
+              "WhenOpened": "2025-07-18T08:35:57.142Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 17,
               "Title": "IUserRepository.cs",
               "DocumentMoniker": "D:\\Visual Studio 2022 projects\\DogShow-Project\\DogShow\\Repository\\UsersRepository\\IUserRepository.cs",
               "RelativeDocumentMoniker": "DogShow\\Repository\\UsersRepository\\IUserRepository.cs",
@@ -291,11 +355,12 @@
               "RelativeToolTip": "DogShow\\Repository\\UsersRepository\\IUserRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-19T11:21:23.417Z"
+              "WhenOpened": "2025-06-19T11:21:23.417Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 18,
               "Title": "Judge.cs",
               "DocumentMoniker": "D:\\Visual Studio 2022 projects\\DogShow-Project\\DogShow\\Modules\\Classes\\Judge.cs",
               "RelativeDocumentMoniker": "DogShow\\Modules\\Classes\\Judge.cs",
@@ -303,11 +368,12 @@
               "RelativeToolTip": "DogShow\\Modules\\Classes\\Judge.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-07T11:02:29.877Z"
+              "WhenOpened": "2025-07-07T11:02:29.877Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 19,
               "Title": "FormForKennel.cs",
               "DocumentMoniker": "D:\\Visual Studio 2022 projects\\DogShow-Project\\DogShow\\Modules\\Forms\\FormForKennel.cs",
               "RelativeDocumentMoniker": "DogShow\\Modules\\Forms\\FormForKennel.cs",
@@ -315,23 +381,25 @@
               "RelativeToolTip": "DogShow\\Modules\\Forms\\FormForKennel.cs",
               "ViewState": "AgIAABsAAAAAAAAAAAAYwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-07T11:09:33.307Z"
+              "WhenOpened": "2025-07-07T11:09:33.307Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 21,
               "Title": "DogShow.csproj",
               "DocumentMoniker": "D:\\Visual Studio 2022 projects\\DogShow-Project\\DogShow\\DogShow.csproj",
               "RelativeDocumentMoniker": "DogShow\\DogShow.csproj",
-              "ToolTip": "D:\\Visual Studio 2022 projects\\DogShow-Project\\DogShow\\DogShow.csproj",
-              "RelativeToolTip": "DogShow\\DogShow.csproj",
+              "ToolTip": "D:\\Visual Studio 2022 projects\\DogShow-Project\\DogShow\\DogShow.csproj*",
+              "RelativeToolTip": "DogShow\\DogShow.csproj*",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-07-07T10:18:58.73Z"
+              "WhenOpened": "2025-07-07T10:18:58.73Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 20,
               "Title": "Person.cs",
               "DocumentMoniker": "D:\\Visual Studio 2022 projects\\DogShow-Project\\DogShow\\Modules\\Classes\\Person.cs",
               "RelativeDocumentMoniker": "DogShow\\Modules\\Classes\\Person.cs",
@@ -339,35 +407,12 @@
               "RelativeToolTip": "DogShow\\Modules\\Classes\\Person.cs",
               "ViewState": "AgIAABMAAAAAAAAAAAAqwCAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-19T11:09:19.983Z"
+              "WhenOpened": "2025-06-19T11:09:19.983Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "UserDisplayDto.cs",
-              "DocumentMoniker": "D:\\Visual Studio 2022 projects\\DogShow-Project\\DogShow\\Modules\\DTO\\User\\UserDisplayDto.cs",
-              "RelativeDocumentMoniker": "DogShow\\Modules\\DTO\\User\\UserDisplayDto.cs",
-              "ToolTip": "D:\\Visual Studio 2022 projects\\DogShow-Project\\DogShow\\Modules\\DTO\\User\\UserDisplayDto.cs",
-              "RelativeToolTip": "DogShow\\Modules\\DTO\\User\\UserDisplayDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-10T11:02:16.101Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "User.cs",
-              "DocumentMoniker": "D:\\Visual Studio 2022 projects\\DogShow-Project\\DogShow\\Modules\\Classes\\User.cs",
-              "RelativeDocumentMoniker": "DogShow\\Modules\\Classes\\User.cs",
-              "ToolTip": "D:\\Visual Studio 2022 projects\\DogShow-Project\\DogShow\\Modules\\Classes\\User.cs",
-              "RelativeToolTip": "DogShow\\Modules\\Classes\\User.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-19T11:08:50.567Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 22,
               "Title": "FormForDogs.cs",
               "DocumentMoniker": "D:\\Visual Studio 2022 projects\\DogShow-Project\\DogShow\\Modules\\Forms\\FormForDogs.cs",
               "RelativeDocumentMoniker": "DogShow\\Modules\\Forms\\FormForDogs.cs",
@@ -375,7 +420,8 @@
               "RelativeToolTip": "DogShow\\Modules\\Forms\\FormForDogs.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-10T12:19:13.403Z"
+              "WhenOpened": "2025-06-10T12:19:13.403Z",
+              "EditorCaption": ""
             }
           ]
         }

@@ -1,8 +1,10 @@
 using System.Text;
 using DogShow.Modules.DataContext;
+using DogShow.Modules.Settings;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
+using Stripe;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -22,6 +24,9 @@ builder.Services.AddScoped<DogShow.Repository.Users.IUserRepository, DogShow.Rep
 builder.Services.AddScoped<DogShow.Services.UsersService.IUserService, DogShow.Services.UsersService.UserService>();
 builder.Services.AddScoped<DogShow.Repository.DogRepository.IDogRepository, DogShow.Repository.DogRepository.DogRepository>();
 builder.Services.AddScoped<DogShow.Services.DogService.IDogServicecs, DogShow.Services.DogService.DogService>();
+
+builder.Services.Configure<StripeSettings>(builder.Configuration.GetSection("Stripe"));
+StripeConfiguration.ApiKey = builder.Configuration["Stripe:SecretKey"];
 
 var jwtKey = builder.Configuration["Jwt:Key"] ?? "super_secret_key_123!";
 var jwtIssuer = builder.Configuration["Jwt:Issuer"] ?? "DogShowIssuer";
@@ -52,6 +57,9 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+app.UseDefaultFiles(); 
+app.UseStaticFiles();
 
 app.UseHttpsRedirection();
 

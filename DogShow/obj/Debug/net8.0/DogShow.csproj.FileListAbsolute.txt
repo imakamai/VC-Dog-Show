@@ -32,7 +32,6 @@ D:\Visual Studio 2022 projects\DogShow-Project\DogShow\bin\Debug\net8.0\Microsof
 D:\Visual Studio 2022 projects\DogShow-Project\DogShow\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
 D:\Visual Studio 2022 projects\DogShow-Project\DogShow\bin\Debug\net8.0\Microsoft.OpenApi.dll
 D:\Visual Studio 2022 projects\DogShow-Project\DogShow\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
-D:\Visual Studio 2022 projects\DogShow-Project\DogShow\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
 D:\Visual Studio 2022 projects\DogShow-Project\DogShow\bin\Debug\net8.0\Mono.TextTemplating.dll
 D:\Visual Studio 2022 projects\DogShow-Project\DogShow\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
 D:\Visual Studio 2022 projects\DogShow-Project\DogShow\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
@@ -44,13 +43,10 @@ D:\Visual Studio 2022 projects\DogShow-Project\DogShow\bin\Debug\net8.0\System.C
 D:\Visual Studio 2022 projects\DogShow-Project\DogShow\bin\Debug\net8.0\System.Composition.Runtime.dll
 D:\Visual Studio 2022 projects\DogShow-Project\DogShow\bin\Debug\net8.0\System.Composition.TypedParts.dll
 D:\Visual Studio 2022 projects\DogShow-Project\DogShow\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
-D:\Visual Studio 2022 projects\DogShow-Project\DogShow\bin\Debug\net8.0\System.Drawing.Common.dll
 D:\Visual Studio 2022 projects\DogShow-Project\DogShow\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
 D:\Visual Studio 2022 projects\DogShow-Project\DogShow\bin\Debug\net8.0\System.Memory.Data.dll
 D:\Visual Studio 2022 projects\DogShow-Project\DogShow\bin\Debug\net8.0\System.Runtime.Caching.dll
 D:\Visual Studio 2022 projects\DogShow-Project\DogShow\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
-D:\Visual Studio 2022 projects\DogShow-Project\DogShow\bin\Debug\net8.0\System.Security.Permissions.dll
-D:\Visual Studio 2022 projects\DogShow-Project\DogShow\bin\Debug\net8.0\System.Windows.Extensions.dll
 D:\Visual Studio 2022 projects\DogShow-Project\DogShow\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.resources.dll
 D:\Visual Studio 2022 projects\DogShow-Project\DogShow\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.resources.dll
 D:\Visual Studio 2022 projects\DogShow-Project\DogShow\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.resources.dll
@@ -109,12 +105,7 @@ D:\Visual Studio 2022 projects\DogShow-Project\DogShow\bin\Debug\net8.0\runtimes
 D:\Visual Studio 2022 projects\DogShow-Project\DogShow\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
 D:\Visual Studio 2022 projects\DogShow-Project\DogShow\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
 D:\Visual Studio 2022 projects\DogShow-Project\DogShow\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
-D:\Visual Studio 2022 projects\DogShow-Project\DogShow\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
-D:\Visual Studio 2022 projects\DogShow-Project\DogShow\bin\Debug\net8.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
-D:\Visual Studio 2022 projects\DogShow-Project\DogShow\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
 D:\Visual Studio 2022 projects\DogShow-Project\DogShow\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
-D:\Visual Studio 2022 projects\DogShow-Project\DogShow\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
-D:\Visual Studio 2022 projects\DogShow-Project\DogShow\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
 D:\Visual Studio 2022 projects\DogShow-Project\DogShow\obj\Debug\net8.0\DogShow.csproj.AssemblyReference.cache
 D:\Visual Studio 2022 projects\DogShow-Project\DogShow\obj\Debug\net8.0\rpswa.dswa.cache.json
 D:\Visual Studio 2022 projects\DogShow-Project\DogShow\obj\Debug\net8.0\DogShow.GeneratedMSBuildEditorConfig.editorconfig
@@ -139,3 +130,5 @@ D:\Visual Studio 2022 projects\DogShow-Project\DogShow\obj\Debug\net8.0\refint\D
 D:\Visual Studio 2022 projects\DogShow-Project\DogShow\obj\Debug\net8.0\DogShow.pdb
 D:\Visual Studio 2022 projects\DogShow-Project\DogShow\obj\Debug\net8.0\DogShow.genruntimeconfig.cache
 D:\Visual Studio 2022 projects\DogShow-Project\DogShow\obj\Debug\net8.0\ref\DogShow.dll
+D:\Visual Studio 2022 projects\DogShow-Project\DogShow\bin\Debug\net8.0\Newtonsoft.Json.dll
+D:\Visual Studio 2022 projects\DogShow-Project\DogShow\bin\Debug\net8.0\Stripe.net.dll
