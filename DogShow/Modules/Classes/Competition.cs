@@ -1,6 +1,4 @@
-﻿using DogShow.Modules.Classes;
-
-namespace DogShow.Modules
+﻿namespace DogShow.Modules.Classes
 {
     public class Competition
     {

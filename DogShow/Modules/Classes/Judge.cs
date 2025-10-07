@@ -1,13 +1,24 @@
 ﻿namespace DogShow.Modules.Classes
 {
-    public class Judge : Person
+    public class Judge
     {
         public Judge()
         {
         }
 
-        public Judge(int id, string name, string lastName, string email, string phone, string address, string city, string postalCode, string state) : base(id, name, lastName, email, phone, address, city, postalCode, state)
+        public Judge(Guid id, string name, string lastName, int age, int yearsOfExperience)
         {
+            Id = id;
+            Name = name;
+            LastName = lastName;
+            Age = age;
+            YearsOfExperience = yearsOfExperience;
         }
+
+        public Guid Id { get; set; }
+        public string Name { get; set; }
+        public string LastName { get; set; }
+        public int Age { get; set; }
+        public int YearsOfExperience { get; set; }
     }
 }

@@ -4,10 +4,15 @@ namespace DogShow.Repository.Users
 {
     public interface IUserRepository
     {
-        Task<List<User>> GetAllAsync();
-        Task<User?> GetByIdAsync(int id);
+        Task<User?> GetByIdAsync(Guid id);
+        Task<User?> GetByEmailAsync(string email);
+        Task<User?> GetByUsernameAsync(string username);
+        Task<IEnumerable<User>> GetAllAsync();
         Task AddAsync(User user);
-        Task UpdateAsync(User user);
-        Task DeleteAsync(User user);
+        void Update(User user);
+        void Delete(User user);
+        Task SaveChangesAsync();
+
+        Task<IEnumerable<User>> SearchByNameAsync(string searchTerm);
     }
 }

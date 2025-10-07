@@ -132,3 +132,4 @@ D:\Visual Studio 2022 projects\DogShow-Project\DogShow\obj\Debug\net8.0\DogShow.
 D:\Visual Studio 2022 projects\DogShow-Project\DogShow\obj\Debug\net8.0\ref\DogShow.dll
 D:\Visual Studio 2022 projects\DogShow-Project\DogShow\bin\Debug\net8.0\Newtonsoft.Json.dll
 D:\Visual Studio 2022 projects\DogShow-Project\DogShow\bin\Debug\net8.0\Stripe.net.dll
+D:\Visual Studio 2022 projects\DogShow-Project\DogShow\bin\Debug\net8.0\BCrypt.Net-Next.dll

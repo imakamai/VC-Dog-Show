@@ -6,152 +6,113 @@ using DogShow.Modules.DTO;
 using DogShow.Modules.DTO.User;
 using DogShow.Repository.Users;
 using Microsoft.IdentityModel.Tokens;
+using BCrypt.Net;
 
 namespace DogShow.Services.UsersService
 {
     public class UserService : IUserService
     {
-        private readonly IUserRepository _repository;
-        private readonly IConfiguration _configuration;
+        // Dependency on the user repository
+        private readonly IUserRepository _userRepository;
 
-        public UserService(IUserRepository repository, IConfiguration configuration)
+        public UserService(IUserRepository userRepository)
         {
-            _repository = repository;
-            _configuration = configuration;
+            _userRepository = userRepository;
         }
 
-        public async Task<List<UserDisplayDto>> GetAllAsync()
+        // Get user by ID
+        public async Task<User?> GetByIdAsync(Guid id)
         {
-            var users = await _repository.GetAllAsync();
-            return users.Select(u => new UserDisplayDto
-            {
-                Id = u.Id,
-                UserName = u.UserName,
-                Name = u.Name,
-                LastName = u.LastName,
-                Email = u.Email,
-                Phone = u.Phone,
-                Address = u.Address,
-                City = u.City,
-                PostalCode = u.PostalCode,
-                State = u.State
-            }).ToList();
+            return await _userRepository.GetByIdAsync(id);
         }
 
-        public async Task<UserDisplayDto?> GetByIdAsync(int id)
+        // Get user by email
+        public async Task<User?> GetByEmailAsync(string email)
         {
-            var user = await _repository.GetByIdAsync(id);
-            if (user == null) return null;
-            return new UserDisplayDto
+            return await _userRepository.GetByEmailAsync(email);
+        }
+
+        // Get user by username
+        public async Task<User?> GetByUsernameAsync(string username)
+        {
+            return await _userRepository.GetByUsernameAsync(username);
+        }
+
+        // Get all users
+        public async Task<IEnumerable<User>> GetAllAsync()
+        {
+            return await _userRepository.GetAllAsync();
+        }
+
+        // Add a new user
+        public async Task AddAsync(User user)
+        {
+            // Check for existing username or email
+            var existingByUsername = await _userRepository.GetByUsernameAsync(user.Username);
+            if (existingByUsername != null)
+                throw new InvalidOperationException("Username already exists.");
+
+            var existingByEmail = await _userRepository.GetByEmailAsync(user.Email);
+            if (existingByEmail != null)
+                throw new InvalidOperationException("Email already exists.");
+
+            await _userRepository.AddAsync(user);
+            await _userRepository.SaveChangesAsync();
+        }
+
+        // Update an existing user
+        public async Task UpdateAsync(User user)
+        {
+            _userRepository.Update(user);
+            await _userRepository.SaveChangesAsync();
+        }
+
+        // Delete a user by ID
+        public async Task DeleteAsync(Guid id)
+        {
+            // Retrieve the user to ensure they exist before deletion
+            var user = await _userRepository.GetByIdAsync(id);
+            if (user != null)
             {
-                Id = user.Id,
-                UserName = user.UserName,
-                Name = user.Name,
-                LastName = user.LastName,
-                Email = user.Email,
-                Phone = user.Phone,
-                Address = user.Address,
-                City = user.City,
-                PostalCode = user.PostalCode,
-                State = user.State
+                _userRepository.Delete(user);
+                await _userRepository.SaveChangesAsync();
+            }
+        }
+
+        // Search users by name
+        // NOTE: This method is currently not used anywhere in the project.
+        public async Task<IEnumerable<User>> SearchByNameAsync(string searchTerm)
+        {
+            return await _userRepository.SearchByNameAsync(searchTerm);
+        }
+
+        // Authenticate user and generate JWT token
+        public async Task<string?> AuthenticateAsync(LoginRequest request, string jwtKey)
+        {
+            // Retrieve the user by username
+            var user = await _userRepository.GetByUsernameAsync(request.Username);
+            if (user == null)
+                return null;
+
+            // Verify the password using BCrypt
+            if (!BCrypt.Net.BCrypt.Verify(request.Password, user.Password))
+                return null;
+
+            var tokenHandler = new JwtSecurityTokenHandler();
+            var key = Encoding.ASCII.GetBytes(jwtKey);
+            var tokenDescriptor = new SecurityTokenDescriptor
+            {
+                Subject = new ClaimsIdentity(new[]
+                {
+                    new Claim(ClaimTypes.NameIdentifier, user.Id.ToString()),
+                    new Claim(ClaimTypes.Name, user.Username)
+                 }),
+                Expires = DateTime.UtcNow.AddHours(2),
+                SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature)
             };
+            var token = tokenHandler.CreateToken(tokenDescriptor);
+            return tokenHandler.WriteToken(token);
         }
-
-        public async Task AddAsync(UserDTO dto)
-        {
-            var user = new User
-            {
-                UserName = dto.UserName,
-                Password = dto.Password,
-                Name = dto.Name,
-                LastName = dto.LastName,
-                Email = dto.Email,
-                Phone = dto.Phone,
-                Address = dto.Address,
-                City = dto.City,
-                PostalCode = dto.PostalCode,
-                State = dto.State
-            };
-            await _repository.AddAsync(user);
-        }
-
-        public async Task<bool> UpdateAsync(int id, UserDTO dto)
-        {
-            var user = await _repository.GetByIdAsync(id);
-            if (user == null) return false;
-
-            user.UserName = dto.UserName;
-            user.Password = dto.Password;
-            user.Name = dto.Name;
-            user.LastName = dto.LastName;
-            user.Email = dto.Email;
-            user.Phone = dto.Phone;
-            user.Address = dto.Address;
-            user.City = dto.City;
-            user.PostalCode = dto.PostalCode;
-            user.State = dto.State;
-
-            await _repository.UpdateAsync(user);
-            return true;
-        }
-
-        public async Task<bool> DeleteAsync(int id)
-        {
-            var user = await _repository.GetByIdAsync(id);
-            if (user == null) return false;
-            await _repository.DeleteAsync(user);
-            return true;
-        }
-
-        public async Task<bool> RegisterAsync(UserDTO dto)
-        {
-            var existing = (await _repository.GetAllAsync())
-                .Any(u => u.UserName == dto.UserName || u.Email == dto.Email);
-            if (existing) return false;
-
-            var user = new User
-            {
-                UserName = dto.UserName,
-                Password = dto.Password, 
-                Name = dto.Name,
-                LastName = dto.LastName,
-                Email = dto.Email,
-                Phone = dto.Phone,
-                Address = dto.Address,
-                City = dto.City,
-                PostalCode = dto.PostalCode,
-                State = dto.State
-            };
-            await _repository.AddAsync(user);
-            return true;
-        }
-
-        public async Task<string?> LoginAsync(UserLoginDto dto)
-        {
-            var user = (await _repository.GetAllAsync())
-                .FirstOrDefault(u => u.UserName == dto.UserName && u.Password == dto.Password);
-            if (user == null) return null;
-
-            // Generate JWT
-            var jwtKey = _configuration["Jwt:Key"] ?? "super_secret_key_123!";
-            var jwtIssuer = _configuration["Jwt:Issuer"] ?? "DogShowIssuer";
-            var claims = new[]
-            {
-                new Claim(ClaimTypes.NameIdentifier, user.Id.ToString()),
-                new Claim(ClaimTypes.Name, user.UserName)
-            };
-            var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwtKey));
-            var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
-
-            var token = new JwtSecurityToken(
-                issuer: jwtIssuer,
-                audience: null,
-                claims: claims,
-                expires: DateTime.Now.AddHours(2),
-                signingCredentials: creds);
-
-            return new JwtSecurityTokenHandler().WriteToken(token);
-        }                                                                                                                                        
     }
 }
 
