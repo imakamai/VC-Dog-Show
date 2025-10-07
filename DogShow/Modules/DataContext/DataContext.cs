@@ -27,16 +27,40 @@ namespace DogShow.Modules.DataContext
                 entity.Property(e => e.Id)
                     .ValueGeneratedOnAdd();
 
-                entity.Property(e => e.Username).IsRequired().HasMaxLength(100);
-                entity.Property(e => e.Password).IsRequired().HasMaxLength(255);
-                entity.Property(e => e.Name).IsRequired().HasMaxLength(100);
-                entity.Property(e => e.LastName).IsRequired().HasMaxLength(100);
-                entity.Property(e => e.Email).IsRequired().HasMaxLength(255);
-                entity.Property(e => e.Phone).HasMaxLength(20);
-                entity.Property(e => e.Address).HasMaxLength(255);
-                entity.Property(e => e.City).HasMaxLength(100);
-                entity.Property(e => e.PostalCode).HasMaxLength(20);
-                entity.Property(e => e.State).HasMaxLength(100);
+                entity.Property(e => e.Username)
+                    .IsRequired()
+                    .HasMaxLength(100);
+
+                entity.Property(e => e.Password)
+                    .IsRequired()
+                    .HasMaxLength(255);
+
+                entity.Property(e => e.Name)
+                    .IsRequired()
+                    .HasMaxLength(100);
+
+                entity.Property(e => e.LastName)
+                    .IsRequired()
+                    .HasMaxLength(100);
+
+                entity.Property(e => e.Email)
+                    .IsRequired()
+                    .HasMaxLength(255);
+
+                entity.Property(e => e.Phone)
+                    .HasMaxLength(20); 
+
+                entity.Property(e => e.Address)
+                    .HasMaxLength(255); 
+
+                entity.Property(e => e.City)
+                    .HasMaxLength(100);
+
+                entity.Property(e => e.PostalCode)
+                    .HasMaxLength(20); 
+
+                entity.Property(e => e.State)
+                    .HasMaxLength(100); 
             });
 
             modelBuilder.Entity<Dog>(entity =>

@@ -1,6 +1,7 @@
 ﻿using DogShow.Modules.DTO.Dog;
 using DogShow.Services.DogService;
 using DogShow.Services.UsersService;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace DogShow.Controllers
@@ -16,6 +17,7 @@ namespace DogShow.Controllers
             _dogServicecs = dogServicecs;
         }
 
+        [Authorize]
         [HttpGet]
         public async Task<ActionResult<IEnumerable<DogDisplayDto>>> GetDog() 
         {
@@ -23,6 +25,7 @@ namespace DogShow.Controllers
             return Ok(dogs);
         }
 
+        [Authorize]
         [HttpGet("{id}")]
         public async Task<ActionResult<DogDisplayDto>> GetDog(int id) 
         {
@@ -31,6 +34,7 @@ namespace DogShow.Controllers
             return Ok(dog);
         }
 
+        [Authorize]
         [HttpPost]
         public async Task<IActionResult> AddDog (DogDTO dto)
         {
@@ -38,6 +42,7 @@ namespace DogShow.Controllers
             return Ok();
         }
 
+        [Authorize]
         [HttpPut("{id}")]
         public async Task<IActionResult> UpdateDog (int id, DogDTO dto)
         {
@@ -46,6 +51,7 @@ namespace DogShow.Controllers
             return NoContent();
         }
 
+        [Authorize]
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteDog(int id) 
         {
