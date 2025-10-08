@@ -72,6 +72,10 @@ builder.Services.AddAuthentication(options =>
     };
 });
 
+builder.Services.Configure<StripeSettings>(builder.Configuration.GetSection("Stripe"));
+StripeConfiguration.ApiKey = builder.Configuration["Stripe:SecretKey"];
+
+
 // CORS Configuration
 builder.Services.AddCors(options =>
 {
@@ -84,12 +88,6 @@ builder.Services.AddCors(options =>
         });
 });
 
-
-builder.Services.Configure<StripeSettings>(builder.Configuration.GetSection("Stripe"));
-StripeConfiguration.ApiKey = builder.Configuration["Stripe:SecretKey"];
-
-
-
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -98,6 +96,8 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+app.UseCors("AllowFrontend");
 
 app.UseDefaultFiles(); 
 app.UseStaticFiles();
