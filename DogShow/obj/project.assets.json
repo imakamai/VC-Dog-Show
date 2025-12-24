@@ -4300,11 +4300,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Visual Studio 2022 projects\\DogShow-Project\\DogShow\\DogShow.csproj",
+      "projectUniqueName": "D:\\Projects\\Files for projects\\Dog Show\\project\\DogShow-Project\\DogShow\\DogShow.csproj",
       "projectName": "DogShow",
-      "projectPath": "D:\\Visual Studio 2022 projects\\DogShow-Project\\DogShow\\DogShow.csproj",
+      "projectPath": "D:\\Projects\\Files for projects\\Dog Show\\project\\DogShow-Project\\DogShow\\DogShow.csproj",
       "packagesPath": "C:\\Users\\imakamai\\.nuget\\packages\\",
-      "outputPath": "D:\\Visual Studio 2022 projects\\DogShow-Project\\DogShow\\obj\\",
+      "outputPath": "D:\\Projects\\Files for projects\\Dog Show\\project\\DogShow-Project\\DogShow\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

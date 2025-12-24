@@ -48,19 +48,19 @@ namespace DogShow.Modules.DataContext
                     .HasMaxLength(255);
 
                 entity.Property(e => e.Phone)
-                    .HasMaxLength(20); 
+                    .HasMaxLength(20);
 
                 entity.Property(e => e.Address)
-                    .HasMaxLength(255); 
+                    .HasMaxLength(255);
 
                 entity.Property(e => e.City)
                     .HasMaxLength(100);
 
                 entity.Property(e => e.PostalCode)
-                    .HasMaxLength(20); 
+                    .HasMaxLength(20);
 
                 entity.Property(e => e.State)
-                    .HasMaxLength(100); 
+                    .HasMaxLength(100);
             });
 
             modelBuilder.Entity<Dog>(entity =>
@@ -68,10 +68,11 @@ namespace DogShow.Modules.DataContext
                 entity.HasKey(e => e.Id);
                 entity.Property(e => e.Name).IsRequired().HasMaxLength(100);
                 entity.Property(e => e.Breed).IsRequired().HasMaxLength(100);
-                entity.Property(e => e.Age).IsRequired();
+                entity.Property(e => e.BirthDate).IsRequired().HasMaxLength(100);
+                entity.Property(e => e.Age);
                 entity.Property(e => e.Gender).IsRequired();
-                entity.Property(e => e.Weight).IsRequired();
-                entity.Property(e => e.Size).IsRequired();
+                entity.Property(e => e.Weight);
+                entity.Property(e => e.Size);
                 entity.Property(e => e.Pedigree).IsRequired();
             });
 
@@ -98,14 +99,14 @@ namespace DogShow.Modules.DataContext
                 .WithMany()
                 .UsingEntity<Dictionary<string, object>>(
                     "CompetitionJudge",
-                    j => j.HasOne<Judge>().WithMany().HasForeignKey("JudgeId"),
-                    c => c.HasOne<Competition>().WithMany().HasForeignKey("CompetitionId"),
+                    j => j.HasOne<Judge>().WithMany().HasForeignKey("JudgeId").OnDelete(DeleteBehavior.Restrict), // Optional relationship
+                    c => c.HasOne<Competition>().WithMany().HasForeignKey("CompetitionId").OnDelete(DeleteBehavior.Cascade), // Competition can still cascade delete
                     je =>
                     {
                         je.HasKey("CompetitionId", "JudgeId");
                         je.ToTable("CompetitionJudge");
                     }
-                );
+            );
 
             modelBuilder.Entity<FormForDogs>(entity =>
             {

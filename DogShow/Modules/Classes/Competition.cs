@@ -22,7 +22,7 @@
         public DateOnly AcquisitionDate { get; set; }
         public TimeOnly AcquisitionTime { get; set; }
         public string AcquisitionPlace {  get; set; }
-        public List<Judge> Judges { get; set; }
+        public List<Judge>? Judges { get; set; }
 
     }
 }

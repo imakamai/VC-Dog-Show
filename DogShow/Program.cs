@@ -11,13 +11,18 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
-builder.Services.AddControllers();
+builder.Services.AddControllers()
+    .AddJsonOptions(options =>
+    {
+        options.JsonSerializerOptions.Converters.Add(new System.Text.Json.Serialization.JsonStringEnumConverter());
+        options.JsonSerializerOptions.PropertyNameCaseInsensitive = true;
+    });
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(c =>
 {
-    c.SwaggerDoc("v1", new OpenApiInfo { Title = "ToDo API", Version = "v1" });
+    c.SwaggerDoc("v1", new OpenApiInfo { Title = "Dog Show Web App API", Version = "v1" });
 
     // Add JWT Bearer security definition
     c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
@@ -53,6 +58,10 @@ builder.Services.AddScoped<DogShow.Repository.Users.IUserRepository, DogShow.Rep
 builder.Services.AddScoped<DogShow.Services.UsersService.IUserService, DogShow.Services.UsersService.UserService>();
 builder.Services.AddScoped<DogShow.Repository.DogRepository.IDogRepository, DogShow.Repository.DogRepository.DogRepository>();
 builder.Services.AddScoped<DogShow.Services.DogService.IDogServicecs, DogShow.Services.DogService.DogService>();
+builder.Services.AddScoped<DogShow.Repository.CompetitionRepository.ICompetitionRepository, DogShow.Repository.CompetitionRepository.CompetitionRepository>();
+builder.Services.AddScoped<DogShow.Services.CompetitionService.ICompetitionService, DogShow.Services.CompetitionService.CompetitionService>();
+builder.Services.AddScoped<DogShow.Repository.FormRepository.IFormRepository, DogShow.Repository.FormRepository.FormRepository>();
+builder.Services.AddScoped<DogShow.Services.FormService.IFormService, DogShow.Services.FormService.FormService>();
 
 // JWT Authentication
 builder.Services.AddAuthentication(options =>
@@ -77,12 +86,13 @@ StripeConfiguration.ApiKey = builder.Configuration["Stripe:SecretKey"];
 
 
 // CORS Configuration
+// CORS Configuration
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowFrontend",
         policy =>
         {
-            policy.WithOrigins("http://localhost:3000")
+            policy.AllowAnyOrigin()
                   .AllowAnyHeader()
                   .AllowAnyMethod();
         });

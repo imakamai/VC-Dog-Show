@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "6UJZQUNn4l4=",
+  "dgSpecHash": "T7yURmDpWlg=",
   "success": true,
-  "projectFilePath": "D:\\Visual Studio 2022 projects\\DogShow-Project\\DogShow\\DogShow.csproj",
+  "projectFilePath": "D:\\Projects\\Files for projects\\Dog Show\\project\\DogShow-Project\\DogShow\\DogShow.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\imakamai\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\imakamai\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

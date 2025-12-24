@@ -71,8 +71,19 @@ namespace DogShow.Controllers
                 Password = BCrypt.Net.BCrypt.HashPassword(request.Password),
             };
 
-            await _userService.AddAsync(user);
-            return CreatedAtAction(nameof(GetById), new { id = user.Id }, user);
+            try
+            {
+                await _userService.AddAsync(user);
+                return CreatedAtAction(nameof(GetById), new { id = user.Id }, user);
+            }
+            catch (InvalidOperationException ex)
+            {
+                return BadRequest(ex.Message);
+            }
+            catch (Exception)
+            {
+                return StatusCode(500, "An unexpected server error occurred.");
+            }
         }
 
         // Update an existing user
