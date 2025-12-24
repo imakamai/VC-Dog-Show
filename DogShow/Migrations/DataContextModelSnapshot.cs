@@ -22,6 +22,50 @@ namespace DogShow.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
+            modelBuilder.Entity("CompetitionJudge", b =>
+                {
+                    b.Property<int>("CompetitionId")
+                        .HasColumnType("int");
+
+                    b.Property<Guid>("JudgeId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.HasKey("CompetitionId", "JudgeId");
+
+                    b.HasIndex("JudgeId");
+
+                    b.ToTable("CompetitionJudge", (string)null);
+                });
+
+            modelBuilder.Entity("DogShow.Modules.Classes.Competition", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<DateOnly>("AcquisitionDate")
+                        .HasColumnType("date");
+
+                    b.Property<string>("AcquisitionPlace")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.Property<TimeOnly>("AcquisitionTime")
+                        .HasColumnType("time");
+
+                    b.Property<string>("Title")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Competitions");
+                });
+
             modelBuilder.Entity("DogShow.Modules.Classes.Dog", b =>
                 {
                     b.Property<int>("Id")
@@ -30,8 +74,12 @@ namespace DogShow.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<int>("Age")
+                    b.Property<int?>("Age")
                         .HasColumnType("int");
+
+                    b.Property<DateOnly>("BirthDate")
+                        .HasMaxLength(100)
+                        .HasColumnType("date");
 
                     b.Property<string>("Breed")
                         .IsRequired()
@@ -50,10 +98,10 @@ namespace DogShow.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<double>("Size")
+                    b.Property<double?>("Size")
                         .HasColumnType("float");
 
-                    b.Property<double>("Weight")
+                    b.Property<double?>("Weight")
                         .HasColumnType("float");
 
                     b.HasKey("Id");
@@ -61,28 +109,46 @@ namespace DogShow.Migrations
                     b.ToTable("Dogs");
                 });
 
-            modelBuilder.Entity("DogShow.Modules.Classes.Person", b =>
+            modelBuilder.Entity("DogShow.Modules.Classes.Judge", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<int>("Age")
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<string>("Address")
-                        .IsRequired()
-                        .HasMaxLength(255)
-                        .HasColumnType("nvarchar(255)");
-
-                    b.Property<string>("City")
+                    b.Property<string>("LastName")
                         .IsRequired()
                         .HasMaxLength(100)
                         .HasColumnType("nvarchar(100)");
 
-                    b.Property<string>("Discriminator")
+                    b.Property<string>("Name")
                         .IsRequired()
-                        .HasMaxLength(8)
-                        .HasColumnType("nvarchar(8)");
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.Property<int>("YearsOfExperience")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Judges");
+                });
+
+            modelBuilder.Entity("DogShow.Modules.Classes.User", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("Address")
+                        .HasMaxLength(255)
+                        .HasColumnType("nvarchar(255)");
+
+                    b.Property<string>("City")
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
 
                     b.Property<string>("Email")
                         .IsRequired()
@@ -99,55 +165,31 @@ namespace DogShow.Migrations
                         .HasMaxLength(100)
                         .HasColumnType("nvarchar(100)");
 
-                    b.Property<string>("Phone")
+                    b.Property<string>("Password")
                         .IsRequired()
+                        .HasMaxLength(255)
+                        .HasColumnType("nvarchar(255)");
+
+                    b.Property<string>("Phone")
                         .HasMaxLength(20)
                         .HasColumnType("nvarchar(20)");
 
                     b.Property<string>("PostalCode")
-                        .IsRequired()
                         .HasMaxLength(20)
                         .HasColumnType("nvarchar(20)");
 
                     b.Property<string>("State")
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.Property<string>("Username")
                         .IsRequired()
                         .HasMaxLength(100)
                         .HasColumnType("nvarchar(100)");
 
                     b.HasKey("Id");
 
-                    b.ToTable("Person");
-
-                    b.HasDiscriminator<string>("Discriminator").HasValue("Person");
-
-                    b.UseTphMappingStrategy();
-                });
-
-            modelBuilder.Entity("DogShow.Modules.Competition", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<DateOnly>("AcquisitionDate")
-                        .HasColumnType("date");
-
-                    b.Property<string>("AcquisitionPlace")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<TimeOnly>("AcquisitionTime")
-                        .HasColumnType("time");
-
-                    b.Property<string>("Title")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Competitions");
+                    b.ToTable("Users");
                 });
 
             modelBuilder.Entity("DogShow.Modules.Forms.FormForDogs", b =>
@@ -158,13 +200,22 @@ namespace DogShow.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
+                    b.Property<string>("CompetitionClass")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("CompetitionId")
+                        .HasColumnType("int");
+
                     b.Property<int>("DogId")
                         .HasColumnType("int");
 
-                    b.Property<int>("UserId")
-                        .HasColumnType("int");
+                    b.Property<Guid>("UserId")
+                        .HasColumnType("uniqueidentifier");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("CompetitionId");
 
                     b.HasIndex("DogId");
 
@@ -173,140 +224,29 @@ namespace DogShow.Migrations
                     b.ToTable("FormForDogs");
                 });
 
-            modelBuilder.Entity("DogShow.Modules.Records.Kennel", b =>
+            modelBuilder.Entity("CompetitionJudge", b =>
                 {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
+                    b.HasOne("DogShow.Modules.Classes.Competition", null)
+                        .WithMany()
+                        .HasForeignKey("CompetitionId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<byte[]>("DigitalSignedDeclaration")
-                        .IsRequired()
-                        .HasColumnType("varbinary(max)");
-
-                    b.Property<string>("DigitalSignedDeclarationContentType")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("DigitalSignedDeclarationOriginalFileName")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("DogShowCertificationDetails")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("DogsBread")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Email")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("FacilitiDescription")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<bool>("HasDogShowCertification")
-                        .HasColumnType("bit");
-
-                    b.Property<bool>("IsMemberOfNationalKennelClub")
-                        .HasColumnType("bit");
-
-                    b.Property<string>("Location")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("NationalKennelClubMembershipNumber")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("NationalKennelClubName")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("OwnerId")
-                        .HasColumnType("int");
-
-                    b.Property<byte[]>("PdfDocument")
-                        .IsRequired()
-                        .HasColumnType("varbinary(max)");
-
-                    b.Property<string>("PdfDocumentContentType")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("PdfDocumentOriginalFileName")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Phone")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateTime>("RegistrationDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<decimal>("RegistrationFeeAmount")
-                        .HasColumnType("decimal(18,2)");
-
-                    b.Property<DateTime>("SubmissionDateTime")
-                        .HasColumnType("datetime2");
-
-                    b.Property<int>("SubmittedByPersonalId")
-                        .HasColumnType("int");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("OwnerId");
-
-                    b.ToTable("Kennels");
-                });
-
-            modelBuilder.Entity("DogShow.Modules.Classes.Judge", b =>
-                {
-                    b.HasBaseType("DogShow.Modules.Classes.Person");
-
-                    b.Property<int?>("CompetitionId")
-                        .HasColumnType("int");
-
-                    b.HasIndex("CompetitionId");
-
-                    b.HasDiscriminator().HasValue("Judge");
-                });
-
-            modelBuilder.Entity("DogShow.Modules.Classes.Owner", b =>
-                {
-                    b.HasBaseType("DogShow.Modules.Classes.Person");
-
-                    b.HasDiscriminator().HasValue("Owner");
-                });
-
-            modelBuilder.Entity("DogShow.Modules.Classes.User", b =>
-                {
-                    b.HasBaseType("DogShow.Modules.Classes.Person");
-
-                    b.Property<string>("Password")
-                        .IsRequired()
-                        .HasMaxLength(255)
-                        .HasColumnType("nvarchar(255)");
-
-                    b.Property<string>("UserName")
-                        .IsRequired()
-                        .HasMaxLength(100)
-                        .HasColumnType("nvarchar(100)");
-
-                    b.HasDiscriminator().HasValue("User");
+                    b.HasOne("DogShow.Modules.Classes.Judge", null)
+                        .WithMany()
+                        .HasForeignKey("JudgeId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("DogShow.Modules.Forms.FormForDogs", b =>
                 {
+                    b.HasOne("DogShow.Modules.Classes.Competition", "Competition")
+                        .WithMany()
+                        .HasForeignKey("CompetitionId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.HasOne("DogShow.Modules.Classes.Dog", "Dog")
                         .WithMany("Forms")
                         .HasForeignKey("DogId")
@@ -319,37 +259,16 @@ namespace DogShow.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
+                    b.Navigation("Competition");
+
                     b.Navigation("Dog");
 
                     b.Navigation("User");
                 });
 
-            modelBuilder.Entity("DogShow.Modules.Records.Kennel", b =>
-                {
-                    b.HasOne("DogShow.Modules.Classes.Owner", "Owner")
-                        .WithMany()
-                        .HasForeignKey("OwnerId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Owner");
-                });
-
-            modelBuilder.Entity("DogShow.Modules.Classes.Judge", b =>
-                {
-                    b.HasOne("DogShow.Modules.Competition", null)
-                        .WithMany("Judges")
-                        .HasForeignKey("CompetitionId");
-                });
-
             modelBuilder.Entity("DogShow.Modules.Classes.Dog", b =>
                 {
                     b.Navigation("Forms");
-                });
-
-            modelBuilder.Entity("DogShow.Modules.Competition", b =>
-                {
-                    b.Navigation("Judges");
                 });
 #pragma warning restore 612, 618
         }

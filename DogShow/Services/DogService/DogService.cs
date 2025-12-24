@@ -21,12 +21,12 @@ namespace DogShow.Services.DogService
             {
                 Name = dto.Name,
                 Breed = dto.Breed,
+                BirthDate = dto.Birth,
                 Age = dto.Age,
                 Gender = dto.Gender,
                 Weight = dto.Weight,
                 Size = dto.Size,
-                Pedigree = dto.Pedigree //?? string.Empty; // Ensure Pedigree is not null
-
+                Pedigree = dto.Pedigree ?? string.Empty
             };
             await _dogRepository.AddAsync(dog);
         }
@@ -41,17 +41,17 @@ namespace DogShow.Services.DogService
 
         public async Task<List<DogDisplayDto>> GetAllAsync()
         {
-            var dog = await _dogRepository.GetAllAsync();
-            return dog.Select(d => new DogDisplayDto
-            { 
+            var dogs = await _dogRepository.GetAllAsync();
+            return dogs.Select(d => new DogDisplayDto
+            {
                 Id = d.Id,
                 Name = d.Name,
                 Breed = d.Breed,
-                Age = d.Age,
+                Birth = d.BirthDate,
+                Age = d.Age ?? 0, 
                 Gender = d.Gender.ToString(),
-                Weight = d.Weight,
-                Size = d.Size,
-                
+                Weight = d.Weight ?? 0, 
+                Size = d.Size ?? 0      
             }).ToList();
         }
 
@@ -62,13 +62,15 @@ namespace DogShow.Services.DogService
 
             return new DogDisplayDto
             {
+                Id = dog.Id,
                 Name = dog.Name,
                 Breed = dog.Breed,
-                Age = dog.Age,
-                Gender = dog.Breed,
-                Weight = dog.Age,
-                Size = dog.Size,
-                Pedigree = dog.Pedigree 
+                Birth = dog.BirthDate,
+                Age = dog.Age ?? 0, 
+                Gender = dog.Gender.ToString(),
+                Weight = dog.Weight ?? 0, 
+                Size = dog.Size ?? 0,     
+                Pedigree = dog.Pedigree ?? string.Empty
             };
         }
 
@@ -79,11 +81,12 @@ namespace DogShow.Services.DogService
 
             dog.Name = dto.Name;
             dog.Breed = dto.Breed;
+            dog.BirthDate = dto.Birth;
             dog.Age = dto.Age;
             dog.Gender = dto.Gender;
             dog.Weight = dto.Weight;
             dog.Size = dto.Size;
-            dog.Pedigree = dto.Pedigree;
+            dog.Pedigree = dto.Pedigree ?? string.Empty;
 
             await _dogRepository.UpdateAsync(dog);
             return true;

@@ -1,6 +1,4 @@
-﻿using DogShow.Modules.Classes;
-
-namespace DogShow.Modules
+﻿namespace DogShow.Modules.Classes
 {
     public class Competition
     {
@@ -24,7 +22,7 @@ namespace DogShow.Modules
         public DateOnly AcquisitionDate { get; set; }
         public TimeOnly AcquisitionTime { get; set; }
         public string AcquisitionPlace {  get; set; }
-        public List<Judge> Judges { get; set; }
+        public List<Judge>? Judges { get; set; }
 
     }
 }
