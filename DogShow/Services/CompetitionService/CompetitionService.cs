@@ -35,6 +35,7 @@ namespace DogShow.Services.CompetitionService
                 AcquisitionDate = competitionDto.AcquisitionDate,
                 AcquisitionTime = competitionDto.AcquisitionTime,
                 AcquisitionPlace = competitionDto.AcquisitionPlace,
+                ApplicationDeadline = competitionDto.ApplicationDeadline,
                 Judges = new List<Judge>() 
             };
 

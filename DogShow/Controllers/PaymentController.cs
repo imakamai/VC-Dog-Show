@@ -1,6 +1,8 @@
 using DogShow.Modules.DTO.Payment;
 using Microsoft.AspNetCore.Mvc;
 using Stripe.Checkout;
+using Stripe;
+using System;
 
 namespace DogShow.Controllers
 {
@@ -21,7 +23,7 @@ namespace DogShow.Controllers
                         PriceData = new SessionLineItemPriceDataOptions
                         {
                             UnitAmount = request.Amount,
-                            Currency = "usd",
+                            Currency = request.Currency ?? "rsd",
                             ProductData = new SessionLineItemPriceDataProductDataOptions
                             {
                                 Name = request.Description,
@@ -34,10 +36,20 @@ namespace DogShow.Controllers
                 SuccessUrl = request.SuccessUrl,
                 CancelUrl = request.CancelUrl,
             };
-            var service = new SessionService();
-            Session session = service.Create(options);
-
-            return Ok(new { sessionId = session.Id });
+            try
+            {
+                var service = new SessionService();
+                Session session = service.Create(options);
+                return Ok(new { sessionId = session.Id });
+            }
+            catch (StripeException e)
+            {
+                return BadRequest(new { error = e.Message });
+            }
+            catch (Exception e)
+            {
+                return StatusCode(500, new { error = "An internal server error occurred." });
+            }
         }
     }
 

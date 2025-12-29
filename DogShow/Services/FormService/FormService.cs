@@ -4,6 +4,7 @@ using DogShow.Modules.DTO.Dog;
 using DogShow.Repository.FormRepository;
 using DogShow.Repository.Users;
 using DogShow.Services.DogService;
+using DogShow.Repository.CompetitionRepository;
 
 namespace DogShow.Services.FormService
 {
@@ -12,19 +13,29 @@ namespace DogShow.Services.FormService
         private readonly IFormRepository _formRepository;
         private readonly IDogServicecs _dogService;
         private readonly IUserRepository _userRepository;
+        private readonly ICompetitionRepository _competitionRepository;
 
-        public FormService(IFormRepository formRepository, IDogServicecs dogService, IUserRepository userRepository)
+        public FormService(IFormRepository formRepository, IDogServicecs dogService, IUserRepository userRepository, ICompetitionRepository competitionRepository)
         {
             _formRepository = formRepository;
             _dogService = dogService;
             _userRepository = userRepository;
+            _competitionRepository = competitionRepository;
         }
 
         public async Task CreateApplicationAsync(ApplicationDTO dto, Guid userId)
         {
-             // Placeholder implementation to ensure build passes
-             // Real implementation would handle dog creation if needed and link to form
-             
+             var competition = await _competitionRepository.GetByIdAsync(dto.CompetitionId);
+             if (competition == null)
+             {
+                 throw new ArgumentException("Competition not found");
+             }
+
+             if (competition.ApplicationDeadline < DateOnly.FromDateTime(DateTime.Now))
+             {
+                 throw new InvalidOperationException("Application deadline has passed");
+             }
+
              if (dto.DogId == null)
              {
                  var newDog = new DogDTO
@@ -45,7 +56,9 @@ namespace DogShow.Services.FormService
              var form = new Modules.Forms.FormForDogs
              {
                  UserId = userId,
-                 DogId = dto.DogId ?? 1 // Fallback/Placeholder
+                 DogId = dto.DogId ?? 1, // Fallback/Placeholder
+                 CompetitionId = dto.CompetitionId,
+                 CompetitionClass = dto.CompetitionClass
              };
              
              await _formRepository.AddAsync(form);

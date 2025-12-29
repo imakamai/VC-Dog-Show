@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "D:\\Projects\\Files for projects\\Dog Show\\project\\DogShow-Project\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{F92A535E-250D-493E-A04C-849A412FCA2A}|DogShow\\DogShow.csproj|d:\\projects\\files for projects\\dog show\\project\\dogshow-project\\dogshow\\controllers\\paymentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F92A535E-250D-493E-A04C-849A412FCA2A}|DogShow\\DogShow.csproj|solutionrelative:dogshow\\controllers\\paymentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{F92A535E-250D-493E-A04C-849A412FCA2A}|DogShow\\DogShow.csproj|d:\\projects\\files for projects\\dog show\\project\\dogshow-project\\dogshow\\modules\\classes\\competition.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F92A535E-250D-493E-A04C-849A412FCA2A}|DogShow\\DogShow.csproj|solutionrelative:dogshow\\modules\\classes\\competition.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -119,10 +123,6 @@
       "RelativeMoniker": "D:0:0:{F92A535E-250D-493E-A04C-849A412FCA2A}|DogShow\\DogShow.csproj|solutionrelative:dogshow\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F92A535E-250D-493E-A04C-849A412FCA2A}|DogShow\\DogShow.csproj|d:\\projects\\files for projects\\dog show\\project\\dogshow-project\\dogshow\\controllers\\paymentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F92A535E-250D-493E-A04C-849A412FCA2A}|DogShow\\DogShow.csproj|solutionrelative:dogshow\\controllers\\paymentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{F92A535E-250D-493E-A04C-849A412FCA2A}|DogShow\\DogShow.csproj|d:\\projects\\files for projects\\dog show\\project\\dogshow-project\\dogshow\\controllers\\dogcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F92A535E-250D-493E-A04C-849A412FCA2A}|DogShow\\DogShow.csproj|solutionrelative:dogshow\\controllers\\dogcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -134,7 +134,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -158,19 +158,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "CompetitionDTO.cs",
-              "DocumentMoniker": "D:\\Projects\\Files for projects\\Dog Show\\project\\DogShow-Project\\DogShow\\Modules\\DTO\\Competition\\CompetitionDTO.cs",
-              "RelativeDocumentMoniker": "DogShow\\Modules\\DTO\\Competition\\CompetitionDTO.cs",
-              "ToolTip": "D:\\Projects\\Files for projects\\Dog Show\\project\\DogShow-Project\\DogShow\\Modules\\DTO\\Competition\\CompetitionDTO.cs",
-              "RelativeToolTip": "DogShow\\Modules\\DTO\\Competition\\CompetitionDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-23T16:21:21.725Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "CompetitionService.cs",
               "DocumentMoniker": "D:\\Projects\\Files for projects\\Dog Show\\project\\DogShow-Project\\DogShow\\Services\\CompetitionService\\CompetitionService.cs",
               "RelativeDocumentMoniker": "DogShow\\Services\\CompetitionService\\CompetitionService.cs",
@@ -182,20 +170,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Competition.cs",
               "DocumentMoniker": "D:\\Projects\\Files for projects\\Dog Show\\project\\DogShow-Project\\DogShow\\Modules\\Classes\\Competition.cs",
               "RelativeDocumentMoniker": "DogShow\\Modules\\Classes\\Competition.cs",
               "ToolTip": "D:\\Projects\\Files for projects\\Dog Show\\project\\DogShow-Project\\DogShow\\Modules\\Classes\\Competition.cs",
               "RelativeToolTip": "DogShow\\Modules\\Classes\\Competition.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-17T15:02:21.806Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Reward.cs",
               "DocumentMoniker": "D:\\Projects\\Files for projects\\Dog Show\\project\\DogShow-Project\\DogShow\\Modules\\Classes\\Reward.cs",
               "RelativeDocumentMoniker": "DogShow\\Modules\\Classes\\Reward.cs",
@@ -207,7 +195,32 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
+              "Title": "PaymentController.cs",
+              "DocumentMoniker": "D:\\Projects\\Files for projects\\Dog Show\\project\\DogShow-Project\\DogShow\\Controllers\\PaymentController.cs",
+              "RelativeDocumentMoniker": "DogShow\\Controllers\\PaymentController.cs",
+              "ToolTip": "D:\\Projects\\Files for projects\\Dog Show\\project\\DogShow-Project\\DogShow\\Controllers\\PaymentController.cs",
+              "RelativeToolTip": "DogShow\\Controllers\\PaymentController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-17T15:02:05.024Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CompetitionDTO.cs",
+              "DocumentMoniker": "D:\\Projects\\Files for projects\\Dog Show\\project\\DogShow-Project\\DogShow\\Modules\\DTO\\Competition\\CompetitionDTO.cs",
+              "RelativeDocumentMoniker": "DogShow\\Modules\\DTO\\Competition\\CompetitionDTO.cs",
+              "ToolTip": "D:\\Projects\\Files for projects\\Dog Show\\project\\DogShow-Project\\DogShow\\Modules\\DTO\\Competition\\CompetitionDTO.cs",
+              "RelativeToolTip": "DogShow\\Modules\\DTO\\Competition\\CompetitionDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-23T16:21:21.725Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "ICompetitionService.cs",
               "DocumentMoniker": "D:\\Projects\\Files for projects\\Dog Show\\project\\DogShow-Project\\DogShow\\Services\\CompetitionService\\ICompetitionService.cs",
               "RelativeDocumentMoniker": "DogShow\\Services\\CompetitionService\\ICompetitionService.cs",
@@ -219,7 +232,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "CompetitionRepository.cs",
               "DocumentMoniker": "D:\\Projects\\Files for projects\\Dog Show\\project\\DogShow-Project\\DogShow\\Repository\\CompetitionRepository\\CompetitionRepository.cs",
               "RelativeDocumentMoniker": "DogShow\\Repository\\CompetitionRepository\\CompetitionRepository.cs",
@@ -231,7 +244,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "launchSettings.json",
               "DocumentMoniker": "D:\\Projects\\Files for projects\\Dog Show\\project\\DogShow-Project\\DogShow\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "DogShow\\Properties\\launchSettings.json",
@@ -243,7 +256,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Projects\\Files for projects\\Dog Show\\project\\DogShow-Project\\DogShow\\Program.cs",
               "RelativeDocumentMoniker": "DogShow\\Program.cs",
@@ -255,7 +268,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "UserService.cs",
               "DocumentMoniker": "D:\\Projects\\Files for projects\\Dog Show\\project\\DogShow-Project\\DogShow\\Services\\UsersService\\UserService.cs",
               "RelativeDocumentMoniker": "DogShow\\Services\\UsersService\\UserService.cs",
@@ -267,7 +280,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "appsettings.json",
               "DocumentMoniker": "D:\\Projects\\Files for projects\\Dog Show\\project\\DogShow-Project\\DogShow\\appsettings.json",
               "RelativeDocumentMoniker": "DogShow\\appsettings.json",
@@ -279,7 +292,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "IUserService.cs",
               "DocumentMoniker": "D:\\Projects\\Files for projects\\Dog Show\\project\\DogShow-Project\\DogShow\\Services\\UsersService\\IUserService.cs",
               "RelativeDocumentMoniker": "DogShow\\Services\\UsersService\\IUserService.cs",
@@ -291,7 +304,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "IDogServicecs.cs",
               "DocumentMoniker": "D:\\Projects\\Files for projects\\Dog Show\\project\\DogShow-Project\\DogShow\\Services\\DogService\\IDogServicecs.cs",
               "RelativeDocumentMoniker": "DogShow\\Services\\DogService\\IDogServicecs.cs",
@@ -303,7 +316,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "DogService.cs",
               "DocumentMoniker": "D:\\Projects\\Files for projects\\Dog Show\\project\\DogShow-Project\\DogShow\\Services\\DogService\\DogService.cs",
               "RelativeDocumentMoniker": "DogShow\\Services\\DogService\\DogService.cs",
@@ -315,7 +328,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "UserRepository.cs",
               "DocumentMoniker": "D:\\Projects\\Files for projects\\Dog Show\\project\\DogShow-Project\\DogShow\\Repository\\UsersRepository\\UserRepository.cs",
               "RelativeDocumentMoniker": "DogShow\\Repository\\UsersRepository\\UserRepository.cs",
@@ -327,7 +340,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "IUserRepository.cs",
               "DocumentMoniker": "D:\\Projects\\Files for projects\\Dog Show\\project\\DogShow-Project\\DogShow\\Repository\\UsersRepository\\IUserRepository.cs",
               "RelativeDocumentMoniker": "DogShow\\Repository\\UsersRepository\\IUserRepository.cs",
@@ -339,7 +352,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "IDogRepository.cs",
               "DocumentMoniker": "D:\\Projects\\Files for projects\\Dog Show\\project\\DogShow-Project\\DogShow\\Repository\\DogRepository\\IDogRepository.cs",
               "RelativeDocumentMoniker": "DogShow\\Repository\\DogRepository\\IDogRepository.cs",
@@ -351,7 +364,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "DogRepository.cs",
               "DocumentMoniker": "D:\\Projects\\Files for projects\\Dog Show\\project\\DogShow-Project\\DogShow\\Repository\\DogRepository\\DogRepository.cs",
               "RelativeDocumentMoniker": "DogShow\\Repository\\DogRepository\\DogRepository.cs",
@@ -363,7 +376,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "StripeSettings.cs",
               "DocumentMoniker": "D:\\Projects\\Files for projects\\Dog Show\\project\\DogShow-Project\\DogShow\\Modules\\Settings\\StripeSettings.cs",
               "RelativeDocumentMoniker": "DogShow\\Modules\\Settings\\StripeSettings.cs",
@@ -375,7 +388,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "FormForDogs.cs",
               "DocumentMoniker": "D:\\Projects\\Files for projects\\Dog Show\\project\\DogShow-Project\\DogShow\\Modules\\Forms\\FormForDogs.cs",
               "RelativeDocumentMoniker": "DogShow\\Modules\\Forms\\FormForDogs.cs",
@@ -387,7 +400,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 20,
               "Title": "RegisterRequest.cs",
               "DocumentMoniker": "D:\\Projects\\Files for projects\\Dog Show\\project\\DogShow-Project\\DogShow\\Modules\\DTO\\User\\RegisterRequest.cs",
               "RelativeDocumentMoniker": "DogShow\\Modules\\DTO\\User\\RegisterRequest.cs",
@@ -399,7 +412,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 21,
               "Title": "LoginRequest.cs",
               "DocumentMoniker": "D:\\Projects\\Files for projects\\Dog Show\\project\\DogShow-Project\\DogShow\\Modules\\DTO\\User\\LoginRequest.cs",
               "RelativeDocumentMoniker": "DogShow\\Modules\\DTO\\User\\LoginRequest.cs",
@@ -411,7 +424,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 22,
               "Title": "PaymentRequestDto.cs",
               "DocumentMoniker": "D:\\Projects\\Files for projects\\Dog Show\\project\\DogShow-Project\\DogShow\\Modules\\DTO\\Payment\\PaymentRequestDto.cs",
               "RelativeDocumentMoniker": "DogShow\\Modules\\DTO\\Payment\\PaymentRequestDto.cs",
@@ -423,7 +436,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 23,
               "Title": "DogDto.cs",
               "DocumentMoniker": "D:\\Projects\\Files for projects\\Dog Show\\project\\DogShow-Project\\DogShow\\Modules\\DTO\\Dog\\DogDto.cs",
               "RelativeDocumentMoniker": "DogShow\\Modules\\DTO\\Dog\\DogDto.cs",
@@ -435,7 +448,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 24,
               "Title": "DogDisplayDto.cs",
               "DocumentMoniker": "D:\\Projects\\Files for projects\\Dog Show\\project\\DogShow-Project\\DogShow\\Modules\\DTO\\Dog\\DogDisplayDto.cs",
               "RelativeDocumentMoniker": "DogShow\\Modules\\DTO\\Dog\\DogDisplayDto.cs",
@@ -447,7 +460,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 25,
               "Title": "DataContext.cs",
               "DocumentMoniker": "D:\\Projects\\Files for projects\\Dog Show\\project\\DogShow-Project\\DogShow\\Modules\\DataContext\\DataContext.cs",
               "RelativeDocumentMoniker": "DogShow\\Modules\\DataContext\\DataContext.cs",
@@ -459,7 +472,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 26,
               "Title": "User.cs",
               "DocumentMoniker": "D:\\Projects\\Files for projects\\Dog Show\\project\\DogShow-Project\\DogShow\\Modules\\Classes\\User.cs",
               "RelativeDocumentMoniker": "DogShow\\Modules\\Classes\\User.cs",
@@ -471,7 +484,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 27,
               "Title": "Judge.cs",
               "DocumentMoniker": "D:\\Projects\\Files for projects\\Dog Show\\project\\DogShow-Project\\DogShow\\Modules\\Classes\\Judge.cs",
               "RelativeDocumentMoniker": "DogShow\\Modules\\Classes\\Judge.cs",
@@ -483,7 +496,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 28,
               "Title": "Dog.cs",
               "DocumentMoniker": "D:\\Projects\\Files for projects\\Dog Show\\project\\DogShow-Project\\DogShow\\Modules\\Classes\\Dog.cs",
               "RelativeDocumentMoniker": "DogShow\\Modules\\Classes\\Dog.cs",
@@ -495,7 +508,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 29,
               "Title": "UserController.cs",
               "DocumentMoniker": "D:\\Projects\\Files for projects\\Dog Show\\project\\DogShow-Project\\DogShow\\Controllers\\UserController.cs",
               "RelativeDocumentMoniker": "DogShow\\Controllers\\UserController.cs",
@@ -504,18 +517,6 @@
               "ViewState": "AgIAAB0AAAAAAAAAAAAIwJAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-17T15:02:10.05Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "PaymentController.cs",
-              "DocumentMoniker": "D:\\Projects\\Files for projects\\Dog Show\\project\\DogShow-Project\\DogShow\\Controllers\\PaymentController.cs",
-              "RelativeDocumentMoniker": "DogShow\\Controllers\\PaymentController.cs",
-              "ToolTip": "D:\\Projects\\Files for projects\\Dog Show\\project\\DogShow-Project\\DogShow\\Controllers\\PaymentController.cs",
-              "RelativeToolTip": "DogShow\\Controllers\\PaymentController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACsAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-17T15:02:05.024Z"
             },
             {
               "$type": "Document",
