@@ -4,6 +4,7 @@ using DogShow.Modules.DataContext;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DogShow.Migrations
 {
     [DbContext(typeof(DataContext))]
-    partial class DataContextModelSnapshot : ModelSnapshot
+    [Migration("20251228124318_AddApplicationDeadlineToCompetition")]
+    partial class AddApplicationDeadlineToCompetition
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -104,15 +107,10 @@ namespace DogShow.Migrations
                     b.Property<double?>("Size")
                         .HasColumnType("float");
 
-                    b.Property<Guid>("UserId")
-                        .HasColumnType("uniqueidentifier");
-
                     b.Property<double?>("Weight")
                         .HasColumnType("float");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("UserId");
 
                     b.ToTable("Dogs");
                 });
@@ -186,9 +184,6 @@ namespace DogShow.Migrations
                         .HasMaxLength(20)
                         .HasColumnType("nvarchar(20)");
 
-                    b.Property<int>("Role")
-                        .HasColumnType("int");
-
                     b.Property<string>("State")
                         .HasMaxLength(100)
                         .HasColumnType("nvarchar(100)");
@@ -250,17 +245,6 @@ namespace DogShow.Migrations
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("DogShow.Modules.Classes.Dog", b =>
-                {
-                    b.HasOne("DogShow.Modules.Classes.User", "User")
-                        .WithMany()
-                        .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("User");
-                });
-
             modelBuilder.Entity("DogShow.Modules.Forms.FormForDogs", b =>
                 {
                     b.HasOne("DogShow.Modules.Classes.Competition", "Competition")
@@ -278,7 +262,7 @@ namespace DogShow.Migrations
                     b.HasOne("DogShow.Modules.Classes.User", "User")
                         .WithMany()
                         .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.Restrict)
+                        .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.Navigation("Competition");

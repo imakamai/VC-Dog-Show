@@ -74,6 +74,11 @@ namespace DogShow.Modules.DataContext
                 entity.Property(e => e.Weight);
                 entity.Property(e => e.Size);
                 entity.Property(e => e.Pedigree).IsRequired();
+
+                entity.HasOne(d => d.User)
+                    .WithMany()
+                    .HasForeignKey(d => d.UserId)
+                    .OnDelete(DeleteBehavior.Cascade);
             });
 
             modelBuilder.Entity<Judge>(entity =>
@@ -122,7 +127,7 @@ namespace DogShow.Modules.DataContext
                     .WithMany()
                     .HasForeignKey("UserId")
                     .IsRequired()
-                    .OnDelete(DeleteBehavior.Cascade);
+                    .OnDelete(DeleteBehavior.Restrict);
             });
 
             OnModelCreatingPartial(modelBuilder);

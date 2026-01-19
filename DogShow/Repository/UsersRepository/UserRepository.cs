@@ -19,25 +19,36 @@ namespace DogShow.Repository.Users
         // Get user by ID
         public async Task<User?> GetByIdAsync(Guid id)
         {
-            return await _users.FindAsync(id);
+            var query = from u in _users.AsNoTracking()
+                        where u.Id == id
+                        select u;
+            return await query.FirstOrDefaultAsync();
         }
 
         // Get user by email
         public async Task<User?> GetByEmailAsync(string email)
         {
-            return await _users.FirstOrDefaultAsync(u => u.Email == email);
+            var query = from u in _users.AsNoTracking()
+                        where u.Email == email
+                        select u;
+            return await query.FirstOrDefaultAsync();
         }
 
         // Get user by username
         public async Task<User?> GetByUsernameAsync(string username)
         {
-            return await _users.FirstOrDefaultAsync(u => u.Username == username);
+            var query = from u in _users.AsNoTracking()
+                        where u.Username == username
+                        select u;
+            return await query.FirstOrDefaultAsync();
         }
 
         // Get all users from the database
         public async Task<IEnumerable<User>> GetAllAsync()
         {
-            return await _users.ToListAsync();
+            var query = from u in _users.AsNoTracking()
+                        select u;
+            return await query.ToListAsync();
         }
 
         // Add a new user to the database
@@ -71,9 +82,12 @@ namespace DogShow.Repository.Users
                 return Enumerable.Empty<User>();
 
             var normalized = searchTerm.Trim().ToLower();
-            return await _users
-                .Where(u => u.Name.ToLower().Contains(normalized) || u.LastName.ToLower().Contains(normalized))
-                .ToListAsync();
+            
+            var query = from u in _users.AsNoTracking()
+                        where u.Name.ToLower().Contains(normalized) || u.LastName.ToLower().Contains(normalized)
+                        select u;
+
+            return await query.ToListAsync();
         }
     }
 }

@@ -2,7 +2,7 @@
 {
     public class StripeSettings
     {
-        public string SecretKey { get; set; }
-        public string PublishableKey { get; set; }
+        public required string SecretKey { get; set; }
+        public required string PublishableKey { get; set; }
     }
 }

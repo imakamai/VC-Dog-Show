@@ -15,12 +15,17 @@ namespace DogShow.Repository.CompetitionRepository
 
         public async Task<List<Competition>> GetAllAsync()
         {
-            return await _context.Competitions.Include(c => c.Judges).ToListAsync();
+            var query = from c in _context.Competitions.Include(c => c.Judges).AsNoTracking()
+                        select c;
+            return await query.ToListAsync();
         }
 
         public async Task<Competition?> GetByIdAsync(int id)
         {
-            return await _context.Competitions.Include(c => c.Judges).FirstOrDefaultAsync(c => c.Id == id);
+            var query = from c in _context.Competitions.Include(c => c.Judges).AsNoTracking()
+                        where c.Id == id
+                        select c;
+            return await query.FirstOrDefaultAsync();
         }
 
         public async Task<List<Competition>> GetActiveAsync()
@@ -28,11 +33,13 @@ namespace DogShow.Repository.CompetitionRepository
             // Assuming "Active" means future date or today.
             // Using DateOnly.FromDateTime(DateTime.Now) for comparison.
             var today = DateOnly.FromDateTime(DateTime.Now);
-            return await _context.Competitions
-                .Include(c => c.Judges)
-                .Where(c => c.AcquisitionDate >= today)
-                .OrderBy(c => c.AcquisitionDate)
-                .ToListAsync();
+
+            var query = from c in _context.Competitions.Include(c => c.Judges).AsNoTracking()
+                        where c.AcquisitionDate >= today
+                        orderby c.AcquisitionDate
+                        select c;
+
+            return await query.ToListAsync();
         }
 
         public async Task AddAsync(Competition competition)

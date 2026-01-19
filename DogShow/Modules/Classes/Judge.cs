@@ -16,8 +16,8 @@
         }
 
         public Guid Id { get; set; }
-        public string Name { get; set; }
-        public string LastName { get; set; }
+        public required string Name { get; set; }
+        public required string LastName { get; set; }
         public int Age { get; set; }
         public int YearsOfExperience { get; set; }
     }

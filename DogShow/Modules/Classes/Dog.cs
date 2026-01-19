@@ -29,14 +29,18 @@ namespace DogShow.Modules.Classes
         }
 
         public int Id { get; set; }
-        public string Name { get; set; }
-        public string Breed { get; set; }
+        public required string Name { get; set; }
+        public required string Breed { get; set; }
         public DateOnly BirthDate { get; set; }
         public int? Age { get; set; }
         public Gender Gender { get; set; }
         public double? Weight { get; set; }
         public double? Size { get; set; }
-        public string Pedigree { get; set; }
+        public required string Pedigree { get; set; }
         public virtual ICollection<FormForDogs> Forms { get; set; }
+
+        // Ownership
+        public required Guid UserId { get; set; }
+        public virtual User? User { get; set; }
     }
 }

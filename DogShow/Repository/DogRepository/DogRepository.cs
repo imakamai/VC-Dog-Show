@@ -27,15 +27,20 @@ namespace DogShow.Repository.DogRepository
 
         public async Task<List<Dog>> GetAllAsync()
         {
-            return await _context.Dogs.ToListAsync();
+            var query = from d in _context.Dogs.AsNoTracking()
+                        select d;
+            return await query.ToListAsync();
         }
 
         public async Task<Dog?> GetByIdAsync(int id)
         {
-            return await _context.Dogs.FirstOrDefaultAsync(d => d.Id == id);
-
-            //return await _context.Dogs.FirstAsync(id);
+            var query = from d in _context.Dogs.AsNoTracking()
+                        where d.Id == id
+                        select d;
+            return await query.FirstOrDefaultAsync();
         }
+
+
 
         public async Task UpdateAsync(Dog dog)
         {

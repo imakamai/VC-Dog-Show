@@ -18,11 +18,12 @@
         }
 
         public int Id { get; set; }
-        public string Title { get; set; }
+        public string Title { get; set; } = string.Empty;
         public DateOnly AcquisitionDate { get; set; }
         public TimeOnly AcquisitionTime { get; set; }
-        public string AcquisitionPlace {  get; set; }
+        public string AcquisitionPlace {  get; set; } = string.Empty;
         public List<Judge>? Judges { get; set; }
+        public DateOnly ApplicationDeadline { get; set; }
 
     }
 }

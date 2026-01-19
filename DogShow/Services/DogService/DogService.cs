@@ -15,7 +15,7 @@ namespace DogShow.Services.DogService
             _configuration = configuration;
         }
 
-        public async Task AddAsync(DogDTO dto)
+        public async Task AddAsync(DogDTO dto, Guid userId)
         {
             var dog = new Dog
             {
@@ -26,22 +26,32 @@ namespace DogShow.Services.DogService
                 Gender = dto.Gender,
                 Weight = dto.Weight,
                 Size = dto.Size,
-                Pedigree = dto.Pedigree ?? string.Empty
+                Pedigree = dto.Pedigree ?? string.Empty,
+                UserId = userId
             };
             await _dogRepository.AddAsync(dog);
         }
 
-        public async Task<bool> DeleteAsync(int id)
+        public async Task<bool> DeleteAsync(int id, Guid userId, UserRole role)
         {
             var dog = await _dogRepository.GetByIdAsync(id);
             if (dog == null) return false;
+
+            if (role != UserRole.Admin && dog.UserId != userId) return false;
+
             await _dogRepository.DeleteAsync(dog);
             return true;
         }
 
-        public async Task<List<DogDisplayDto>> GetAllAsync()
+        public async Task<List<DogDisplayDto>> GetAllAsync(Guid userId, UserRole role)
         {
             var dogs = await _dogRepository.GetAllAsync();
+            
+            if (role != UserRole.Admin)
+            {
+                dogs = dogs.Where(d => d.UserId == userId).ToList();
+            }
+
             return dogs.Select(d => new DogDisplayDto
             {
                 Id = d.Id,
@@ -51,14 +61,17 @@ namespace DogShow.Services.DogService
                 Age = d.Age ?? 0, 
                 Gender = d.Gender.ToString(),
                 Weight = d.Weight ?? 0, 
-                Size = d.Size ?? 0      
+                Size = d.Size ?? 0,
+                Pedigree = d.Pedigree ?? string.Empty
             }).ToList();
         }
 
-        public async Task<DogDisplayDto?> GetByIdAsync(int id)
+        public async Task<DogDisplayDto?> GetByIdAsync(int id, Guid userId, UserRole role)
         {
             var dog = await _dogRepository.GetByIdAsync(id);
             if (dog == null) return null;
+
+            if (role != UserRole.Admin && dog.UserId != userId) return null;
 
             return new DogDisplayDto
             {
@@ -74,10 +87,12 @@ namespace DogShow.Services.DogService
             };
         }
 
-        public async Task<bool> UpdateAsync(int id, DogDTO dto)
+        public async Task<bool> UpdateAsync(int id, DogDTO dto, Guid userId, UserRole role)
         {
             var dog = await _dogRepository.GetByIdAsync(id);
             if (dog == null) return false;
+
+            if (role != UserRole.Admin && dog.UserId != userId) return false;
 
             dog.Name = dto.Name;
             dog.Breed = dto.Breed;
