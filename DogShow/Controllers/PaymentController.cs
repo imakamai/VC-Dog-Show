@@ -46,7 +46,7 @@ namespace DogShow.Controllers
             {
                 return BadRequest(new { error = e.Message });
             }
-            catch (Exception e)
+            catch (Exception)
             {
                 return StatusCode(500, new { error = "An internal server error occurred." });
             }

@@ -1,6 +1,7 @@
 using DogShow.Modules.DTO.Application;
 using DogShow.Services.FormService;
 using Microsoft.AspNetCore.Authorization;
+using DogShow.Modules.Forms;
 using Microsoft.AspNetCore.Mvc;
 using System.Security.Claims;
 
@@ -37,6 +38,14 @@ namespace DogShow.Controllers
 
             await _formService.CreateApplicationAsync(dto, userId);
             return Ok();
+        }
+
+        [Authorize(Roles = "Manager,Admin")]
+        [HttpGet]
+        public async Task<ActionResult<List<DogShow.Modules.Forms.FormDetailDto>>> GetAll()
+        {
+            var applications = await _formService.GetAllApplicationsAsync();
+            return Ok(applications);
         }
     }
 }

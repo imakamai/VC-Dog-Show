@@ -1,5 +1,6 @@
 using DogShow.Modules.Classes;
 using DogShow.Services.CompetitionService;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace DogShow.Controllers
@@ -40,6 +41,7 @@ namespace DogShow.Controllers
             return Ok(activeCompetitions);
         }
 
+        [Authorize(Roles = "Manager,Admin")]
         [HttpPost]
         public async Task<ActionResult<Competition>> Create([FromBody] DogShow.Modules.DTO.Competition.CompetitionDTO competitionDto)
         {

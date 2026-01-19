@@ -34,7 +34,7 @@
         
 
         public int Id { get; set; }
-        public string Name { get; set; }
+        public required string Name { get; set; }
         public RewardTypeByBreedClass rewardTypeByBreedClass { get; set; }
         public RewardTypeByTheHonor rewardTypeByTheHonor { get; set; }
         public string? Description { get; set; }

@@ -50,6 +50,7 @@ namespace DogShow.Controllers
         }
 
         // Get all users (admin or for demo; usually not public)
+        [Authorize(Roles = "Admin")]
         [HttpGet]
         public async Task<ActionResult<IEnumerable<User>>> GetAll()
         {
@@ -69,6 +70,7 @@ namespace DogShow.Controllers
                 Email = request.Email,
                 Username = request.Username,
                 Password = BCrypt.Net.BCrypt.HashPassword(request.Password),
+                Role = UserRole.User
             };
 
             try
@@ -87,20 +89,63 @@ namespace DogShow.Controllers
         }
 
         // Update an existing user
+        [Authorize]
         [HttpPut("{id:guid}")]
-        public async Task<ActionResult> Update(Guid id, [FromBody] User user)
+        public async Task<ActionResult> Update(Guid id, [FromBody] UpdateUserRequest request)
         {
-            if (id != user.Id)
-                return BadRequest("ID mismatch.");
+            var userIdClaim = User.FindFirst(ClaimTypes.NameIdentifier);
+            if (userIdClaim == null) return Unauthorized();
 
-            await _userService.UpdateAsync(user);
+            var currentUserId = Guid.Parse(userIdClaim.Value);
+            var currentUserRole = User.FindFirst(ClaimTypes.Role)?.Value;
+
+            var existingUser = await _userService.GetByIdAsync(id);
+            if (existingUser == null) return NotFound();
+
+            // Field-level security based on role
+            if (currentUserRole == "Admin" || currentUserRole == "Manager")
+            {
+                // Admin/Manager can ONLY edit identity info
+                existingUser.Name = request.Name;
+                existingUser.LastName = request.LastName;
+                if (!string.IsNullOrEmpty(request.Email)) existingUser.Email = request.Email;
+                if (!string.IsNullOrEmpty(request.Username)) existingUser.Username = request.Username;
+                // They do NOT update address/phone in this simplified requirement
+            }
+            else
+            {
+                // Standard User can edit personal info
+                existingUser.Name = request.Name;
+                existingUser.LastName = request.LastName;
+                existingUser.Phone = request.Phone;
+                existingUser.Address = request.Address;
+                existingUser.City = request.City;
+                existingUser.PostalCode = request.PostalCode;
+                existingUser.State = request.State;
+                // They do NOT update Email/Username
+            }
+
+            await _userService.UpdateAsync(existingUser);
             return NoContent();
         }
 
         // Delete a user by ID
+        [Authorize]
         [HttpDelete("{id:guid}")]
         public async Task<ActionResult> Delete(Guid id)
         {
+            var userIdClaim = User.FindFirst(ClaimTypes.NameIdentifier);
+            if (userIdClaim == null) return Unauthorized();
+
+            var currentUserId = Guid.Parse(userIdClaim.Value);
+            var currentUserRole = User.FindFirst(ClaimTypes.Role)?.Value;
+
+            // Allow if Admin OR if deleting self
+            if (currentUserRole != "Admin" && currentUserId != id)
+            {
+                return Forbid();
+            }
+
             await _userService.DeleteAsync(id);
             return NoContent();
         }
@@ -118,6 +163,10 @@ namespace DogShow.Controllers
         public async Task<ActionResult<string>> Login([FromBody] LoginRequest request, [FromServices] IConfiguration config)
         {
             var jwtKey = config["Jwt:Key"];
+            if (string.IsNullOrEmpty(jwtKey))
+            {
+                return StatusCode(500, "Internal Server Error: JWT Key is not configured.");
+            }
             var token = await _userService.AuthenticateAsync(request, jwtKey);
             if (token == null)
                 return Unauthorized("Invalid credentials");

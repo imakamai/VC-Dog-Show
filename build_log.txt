@@ -1,0 +1,17 @@
+﻿  Determining projects to restore...
+  All projects are up-to-date for restore.
+D:\Projects\Files for projects\Dog Show\project\DogShow-Project\DogShow\Services\DogService\DogService.cs(45,41): error CS9035: Required member 'DogDisplayDto.Pedigree' must be set in the object initializer or attribute constructor. [D:\Projects\Files for projects\Dog Show\project\DogShow-Project\DogShow\DogShow.csproj]
+D:\Projects\Files for projects\Dog Show\project\DogShow-Project\DogShow\Services\FormService\FormService.cs(56,29): error CS9035: Required member 'FormForDogs.Dog' must be set in the object initializer or attribute constructor. [D:\Projects\Files for projects\Dog Show\project\DogShow-Project\DogShow\DogShow.csproj]
+D:\Projects\Files for projects\Dog Show\project\DogShow-Project\DogShow\Services\FormService\FormService.cs(56,29): error CS9035: Required member 'FormForDogs.User' must be set in the object initializer or attribute constructor. [D:\Projects\Files for projects\Dog Show\project\DogShow-Project\DogShow\DogShow.csproj]
+D:\Projects\Files for projects\Dog Show\project\DogShow-Project\DogShow\Services\FormService\FormService.cs(56,29): error CS9035: Required member 'FormForDogs.Competition' must be set in the object initializer or attribute constructor. [D:\Projects\Files for projects\Dog Show\project\DogShow-Project\DogShow\DogShow.csproj]
+
+Build FAILED.
+
+D:\Projects\Files for projects\Dog Show\project\DogShow-Project\DogShow\Services\DogService\DogService.cs(45,41): error CS9035: Required member 'DogDisplayDto.Pedigree' must be set in the object initializer or attribute constructor. [D:\Projects\Files for projects\Dog Show\project\DogShow-Project\DogShow\DogShow.csproj]
+D:\Projects\Files for projects\Dog Show\project\DogShow-Project\DogShow\Services\FormService\FormService.cs(56,29): error CS9035: Required member 'FormForDogs.Dog' must be set in the object initializer or attribute constructor. [D:\Projects\Files for projects\Dog Show\project\DogShow-Project\DogShow\DogShow.csproj]
+D:\Projects\Files for projects\Dog Show\project\DogShow-Project\DogShow\Services\FormService\FormService.cs(56,29): error CS9035: Required member 'FormForDogs.User' must be set in the object initializer or attribute constructor. [D:\Projects\Files for projects\Dog Show\project\DogShow-Project\DogShow\DogShow.csproj]
+D:\Projects\Files for projects\Dog Show\project\DogShow-Project\DogShow\Services\FormService\FormService.cs(56,29): error CS9035: Required member 'FormForDogs.Competition' must be set in the object initializer or attribute constructor. [D:\Projects\Files for projects\Dog Show\project\DogShow-Project\DogShow\DogShow.csproj]
+    0 Warning(s)
+    4 Error(s)
+
+Time Elapsed 00:00:02.19

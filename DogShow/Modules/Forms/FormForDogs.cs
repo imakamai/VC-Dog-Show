@@ -25,8 +25,8 @@ namespace DogShow.Modules.Forms
         public int CompetitionId { get; set; }
         public string CompetitionClass { get; set; } = string.Empty;
 
-        public virtual Dog Dog { get; set; }
-        public virtual User User { get; set; }
-        public virtual Competition Competition { get; set; }
+        public virtual Dog? Dog { get; set; }
+        public virtual User? User { get; set; }
+        public virtual Competition? Competition { get; set; }
     }
 }

@@ -5,7 +5,7 @@ namespace DogShow.Modules.DTO.Application
     public class ApplicationDTO
     {
         public int CompetitionId { get; set; }
-        public string CompetitionClass { get; set; }
+        public required string CompetitionClass { get; set; }
         public int? DogId { get; set; }
 
         public string? Name { get; set; }
